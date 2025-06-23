@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +47,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,6 +65,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\GradesDal.cs" />
+    <Compile Include="DAL\GradeSubjectDal.cs" />
+    <Compile Include="DAL\StudentsDal.cs" />
+    <Compile Include="DAL\StudentSubjectDal.cs" />
+    <Compile Include="DAL\SubjectsDal.cs" />
+    <Compile Include="DAL\SubjectTeacherDal.cs" />
+    <Compile Include="DAL\TeachersDal.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,11 +80,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\GradeSubject\GradeSubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GradeSubject\GradeSubjectForm.Designer.cs">
+      <DependentUpon>GradeSubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GradeSubject\SubjectGradeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GradeSubject\SubjectGradeForm.Designer.cs">
+      <DependentUpon>SubjectGradeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Grades\GradesForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\Grades\GradesForm.Designer.cs">
       <DependentUpon>GradesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StudentSubject\StudentSubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StudentSubject\StudentSubjectForm.Designer.cs">
+      <DependentUpon>StudentSubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StudentSubject\SubjectStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StudentSubject\SubjectStudentForm.Designer.cs">
+      <DependentUpon>SubjectStudentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Students\CreateStudentForm.cs">
       <SubType>Form</SubType>
@@ -89,6 +139,18 @@
     </Compile>
     <Compile Include="UI\Subjects\SubjectsForm.Designer.cs">
       <DependentUpon>SubjectsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SubjectTeacher\SubjectTeacherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SubjectTeacher\SubjectTeacherForm.Designer.cs">
+      <DependentUpon>SubjectTeacherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SubjectTeacher\TeacherSubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SubjectTeacher\TeacherSubjectForm.Designer.cs">
+      <DependentUpon>TeacherSubjectForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Teachers\CreateTeacherForm.cs">
       <SubType>Form</SubType>
@@ -137,9 +199,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="UI\GradeSubject\" />
-    <Folder Include="UI\StudentSubject\" />
-    <Folder Include="UI\SubjectTeacher\" />
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
