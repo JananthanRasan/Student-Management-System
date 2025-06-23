@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentManagementSystem.DAL
 {
-    internal class SubjectsDal
+    internal class StudentDal
     {
     }
 }

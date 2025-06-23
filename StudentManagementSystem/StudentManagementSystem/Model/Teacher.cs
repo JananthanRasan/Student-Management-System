@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudentManagementSystem.DAL
+namespace StudentManagementSystem.Model
 {
-    internal class StudentsDal
+    internal class Teacher
     {
     }
 }

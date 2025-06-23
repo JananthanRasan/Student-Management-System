@@ -65,21 +65,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL\GradesDal.cs" />
+    <Compile Include="DAL\GradeDal.cs" />
     <Compile Include="DAL\GradeSubjectDal.cs" />
-    <Compile Include="DAL\StudentsDal.cs" />
+    <Compile Include="DAL\StudentDal.cs" />
     <Compile Include="DAL\StudentSubjectDal.cs" />
-    <Compile Include="DAL\SubjectsDal.cs" />
+    <Compile Include="DAL\SubjectDal.cs" />
     <Compile Include="DAL\SubjectTeacherDal.cs" />
-    <Compile Include="DAL\TeachersDal.cs" />
+    <Compile Include="DAL\TeacherDal.cs" />
+    <Compile Include="DAL\UserDal.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Grade.cs" />
+    <Compile Include="Model\GradeSubject.cs" />
+    <Compile Include="Model\Student.cs" />
+    <Compile Include="Model\StudentSubject.cs" />
+    <Compile Include="Model\Subject.cs" />
+    <Compile Include="Model\SubjectTeacher.cs" />
+    <Compile Include="Model\Teacher.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\DashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DashboardForm.Designer.cs">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\GradeSubject\GradeSubjectForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +191,18 @@
     <Compile Include="UI\Teachers\ShowTeacherForm.Designer.cs">
       <DependentUpon>ShowTeacherForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Users\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Users\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Users\RegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Users\RegistrationForm.Designer.cs">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -185,6 +212,60 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\GradeSubject\GradeSubjectForm.resx">
+      <DependentUpon>GradeSubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GradeSubject\SubjectGradeForm.resx">
+      <DependentUpon>SubjectGradeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Grades\GradesForm.resx">
+      <DependentUpon>GradesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StudentSubject\StudentSubjectForm.resx">
+      <DependentUpon>StudentSubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StudentSubject\SubjectStudentForm.resx">
+      <DependentUpon>SubjectStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Students\CreateStudentForm.resx">
+      <DependentUpon>CreateStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Students\EditStudentForm.resx">
+      <DependentUpon>EditStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Students\ListStudentsForm.resx">
+      <DependentUpon>ListStudentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Students\ShowStudentForm.resx">
+      <DependentUpon>ShowStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Subjects\SubjectsForm.resx">
+      <DependentUpon>SubjectsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SubjectTeacher\SubjectTeacherForm.resx">
+      <DependentUpon>SubjectTeacherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SubjectTeacher\TeacherSubjectForm.resx">
+      <DependentUpon>TeacherSubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Teachers\CreateTeacherForm.resx">
+      <DependentUpon>CreateTeacherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Teachers\EditTeacherForm.resx">
+      <DependentUpon>EditTeacherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Teachers\ListTeachersForm.resx">
+      <DependentUpon>ListTeachersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Teachers\ShowTeacherForm.resx">
+      <DependentUpon>ShowTeacherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Users\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Users\RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
