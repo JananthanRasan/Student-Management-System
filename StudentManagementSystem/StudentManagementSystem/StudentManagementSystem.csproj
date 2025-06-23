@@ -119,12 +119,6 @@
     <Compile Include="UI\StudentSubject\StudentSubjectForm.Designer.cs">
       <DependentUpon>StudentSubjectForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\StudentSubject\SubjectStudentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\StudentSubject\SubjectStudentForm.Designer.cs">
-      <DependentUpon>SubjectStudentForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\Students\CreateStudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,9 +217,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\StudentSubject\StudentSubjectForm.resx">
       <DependentUpon>StudentSubjectForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\StudentSubject\SubjectStudentForm.resx">
-      <DependentUpon>SubjectStudentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Students\CreateStudentForm.resx">
       <DependentUpon>CreateStudentForm.cs</DependentUpon>

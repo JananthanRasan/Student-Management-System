@@ -57,7 +57,7 @@
             this.lblHead.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblHead.Location = new System.Drawing.Point(0, 0);
             this.lblHead.Name = "lblHead";
-            this.lblHead.Size = new System.Drawing.Size(890, 45);
+            this.lblHead.Size = new System.Drawing.Size(895, 45);
             this.lblHead.TabIndex = 1;
             this.lblHead.Text = "Subjects";
             this.lblHead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -86,7 +86,7 @@
             this.btnAddStudent.Name = "btnAddStudent";
             this.btnAddStudent.Size = new System.Drawing.Size(123, 37);
             this.btnAddStudent.TabIndex = 14;
-            this.btnAddStudent.Text = "Add Student";
+            this.btnAddStudent.Text = "Add Grade";
             this.btnAddStudent.UseVisualStyleBackColor = true;
             // 
             // btnPrint
@@ -164,7 +164,7 @@
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlText;
             this.groupBox1.Location = new System.Drawing.Point(-2, 391);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(899, 1);
+            this.groupBox1.Size = new System.Drawing.Size(897, 1);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -229,7 +229,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(890, 463);
+            this.ClientSize = new System.Drawing.Size(895, 463);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.txtTeacherID);
