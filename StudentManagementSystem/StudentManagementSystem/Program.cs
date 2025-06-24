@@ -1,4 +1,5 @@
-﻿using StudentManagementSystem.UI.Users;
+﻿using StudentManagementSystem.UI;
+using StudentManagementSystem.UI.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace StudentManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new DashboardForm());
         }
     }
 }
