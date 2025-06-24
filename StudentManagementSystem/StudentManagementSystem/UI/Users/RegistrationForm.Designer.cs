@@ -157,11 +157,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // LoginForm
+            // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(469, 352);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnClose);
@@ -174,7 +175,7 @@
             this.Controls.Add(this.lblSubjectCode);
             this.Controls.Add(this.lblSubjectName);
             this.Controls.Add(this.lblHead);
-            this.Name = "LoginForm";
+            this.Name = "RegistrationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubjectsForm));
             this.lblHead = new System.Windows.Forms.Label();
             this.dgvSubjects = new System.Windows.Forms.DataGridView();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnAddStudent = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
@@ -46,8 +46,11 @@
             this.lblSubjectName = new System.Windows.Forms.Label();
             this.btnAddTeacher = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnSearch = new System.Windows.Forms.Button();
+            this.tsSearch = new System.Windows.Forms.ToolStrip();
+            this.tstxtSearch = new System.Windows.Forms.ToolStripTextBox();
+            this.tsbtnSearch = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSubjects)).BeginInit();
+            this.tsSearch.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblHead
@@ -70,15 +73,6 @@
             this.dgvSubjects.Name = "dgvSubjects";
             this.dgvSubjects.Size = new System.Drawing.Size(469, 258);
             this.dgvSubjects.TabIndex = 10;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(12, 66);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(170, 33);
-            this.txtSearch.TabIndex = 11;
-            this.txtSearch.Text = "search";
             // 
             // btnAddStudent
             // 
@@ -172,16 +166,18 @@
             // 
             // txtFirstName
             // 
+            this.txtFirstName.BackColor = System.Drawing.Color.Khaki;
             this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.Location = new System.Drawing.Point(667, 228);
+            this.txtFirstName.Location = new System.Drawing.Point(671, 230);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(211, 35);
             this.txtFirstName.TabIndex = 27;
             // 
             // txtTeacherID
             // 
+            this.txtTeacherID.BackColor = System.Drawing.Color.Khaki;
             this.txtTeacherID.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTeacherID.Location = new System.Drawing.Point(667, 155);
+            this.txtTeacherID.Location = new System.Drawing.Point(671, 157);
             this.txtTeacherID.Name = "txtTeacherID";
             this.txtTeacherID.Size = new System.Drawing.Size(211, 35);
             this.txtTeacherID.TabIndex = 26;
@@ -189,8 +185,9 @@
             // lblSubjectCode
             // 
             this.lblSubjectCode.AutoSize = true;
+            this.lblSubjectCode.BackColor = System.Drawing.Color.PeachPuff;
             this.lblSubjectCode.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubjectCode.Location = new System.Drawing.Point(494, 233);
+            this.lblSubjectCode.Location = new System.Drawing.Point(498, 235);
             this.lblSubjectCode.Name = "lblSubjectCode";
             this.lblSubjectCode.Size = new System.Drawing.Size(135, 30);
             this.lblSubjectCode.TabIndex = 24;
@@ -199,8 +196,9 @@
             // lblSubjectName
             // 
             this.lblSubjectName.AutoSize = true;
+            this.lblSubjectName.BackColor = System.Drawing.Color.PeachPuff;
             this.lblSubjectName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubjectName.Location = new System.Drawing.Point(494, 160);
+            this.lblSubjectName.Location = new System.Drawing.Point(498, 162);
             this.lblSubjectName.Name = "lblSubjectName";
             this.lblSubjectName.Size = new System.Drawing.Size(143, 30);
             this.lblSubjectName.TabIndex = 25;
@@ -226,22 +224,45 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
             // 
-            // btnSearch
+            // tsSearch
             // 
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(188, 62);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(82, 37);
-            this.btnSearch.TabIndex = 46;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.tsSearch.Dock = System.Windows.Forms.DockStyle.None;
+            this.tsSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tstxtSearch,
+            this.tsbtnSearch});
+            this.tsSearch.Location = new System.Drawing.Point(12, 57);
+            this.tsSearch.Name = "tsSearch";
+            this.tsSearch.Size = new System.Drawing.Size(208, 35);
+            this.tsSearch.TabIndex = 37;
+            this.tsSearch.Text = "toolStrip1";
+            // 
+            // tstxtSearch
+            // 
+            this.tstxtSearch.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.tstxtSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tstxtSearch.ForeColor = System.Drawing.Color.Black;
+            this.tstxtSearch.Name = "tstxtSearch";
+            this.tstxtSearch.Size = new System.Drawing.Size(140, 35);
+            // 
+            // tsbtnSearch
+            // 
+            this.tsbtnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.tsbtnSearch.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbtnSearch.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tsbtnSearch.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnSearch.Image")));
+            this.tsbtnSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbtnSearch.Name = "tsbtnSearch";
+            this.tsbtnSearch.Size = new System.Drawing.Size(23, 32);
+            this.tsbtnSearch.Text = "Search";
             // 
             // SubjectsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(895, 463);
-            this.Controls.Add(this.btnSearch);
+            this.ControlBox = false;
+            this.Controls.Add(this.tsSearch);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.txtTeacherID);
@@ -257,12 +278,14 @@
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvSubjects);
             this.Controls.Add(this.lblHead);
             this.Name = "SubjectsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Subjects";
             ((System.ComponentModel.ISupportInitialize)(this.dgvSubjects)).EndInit();
+            this.tsSearch.ResumeLayout(false);
+            this.tsSearch.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,7 +295,6 @@
 
         private System.Windows.Forms.Label lblHead;
         private System.Windows.Forms.DataGridView dgvSubjects;
-        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnAddStudent;
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button btnExport;
@@ -288,6 +310,8 @@
         private System.Windows.Forms.Label lblSubjectName;
         private System.Windows.Forms.Button btnAddTeacher;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.ToolStrip tsSearch;
+        private System.Windows.Forms.ToolStripTextBox tstxtSearch;
+        private System.Windows.Forms.ToolStripButton tsbtnSearch;
     }
 }

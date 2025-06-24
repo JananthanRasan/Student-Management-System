@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListStudentsForm));
             this.lblHead = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.lblCount = new System.Windows.Forms.Label();
             this.dgvStudents = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -42,8 +43,12 @@
             this.btnExport = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
             this.btnAddSubject = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.tsSearch = new System.Windows.Forms.ToolStrip();
+            this.tstxtSearch = new System.Windows.Forms.ToolStripTextBox();
+            this.tsbtnSearch = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
+            this.tsSearch.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblHead
@@ -58,15 +63,6 @@
             this.lblHead.TabIndex = 0;
             this.lblHead.Text = "Students";
             this.lblHead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(12, 60);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(170, 33);
-            this.txtSearch.TabIndex = 1;
-            this.txtSearch.Text = "search";
             // 
             // lblCount
             // 
@@ -186,22 +182,51 @@
             this.btnAddSubject.Text = "Add Subject";
             this.btnAddSubject.UseVisualStyleBackColor = true;
             // 
-            // btnSearch
+            // imageList1
             // 
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(188, 56);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(82, 37);
-            this.btnSearch.TabIndex = 35;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "working.png");
+            // 
+            // tsSearch
+            // 
+            this.tsSearch.Dock = System.Windows.Forms.DockStyle.None;
+            this.tsSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tstxtSearch,
+            this.tsbtnSearch});
+            this.tsSearch.Location = new System.Drawing.Point(5, 58);
+            this.tsSearch.Name = "tsSearch";
+            this.tsSearch.Size = new System.Drawing.Size(208, 35);
+            this.tsSearch.TabIndex = 36;
+            this.tsSearch.Text = "toolStrip1";
+            // 
+            // tstxtSearch
+            // 
+            this.tstxtSearch.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.tstxtSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tstxtSearch.ForeColor = System.Drawing.Color.Black;
+            this.tstxtSearch.Name = "tstxtSearch";
+            this.tstxtSearch.Size = new System.Drawing.Size(140, 35);
+            // 
+            // tsbtnSearch
+            // 
+            this.tsbtnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.tsbtnSearch.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbtnSearch.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tsbtnSearch.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnSearch.Image")));
+            this.tsbtnSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbtnSearch.Name = "tsbtnSearch";
+            this.tsbtnSearch.Size = new System.Drawing.Size(23, 32);
+            this.tsbtnSearch.Text = "Search";
             // 
             // ListStudentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(851, 455);
-            this.Controls.Add(this.btnSearch);
+            this.ControlBox = false;
+            this.Controls.Add(this.tsSearch);
             this.Controls.Add(this.btnShow);
             this.Controls.Add(this.btnAddSubject);
             this.Controls.Add(this.btnPrint);
@@ -214,12 +239,13 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvStudents);
             this.Controls.Add(this.lblCount);
-            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.lblHead);
             this.Name = "ListStudentsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Students";
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();
+            this.tsSearch.ResumeLayout(false);
+            this.tsSearch.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,7 +254,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblHead;
-        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label lblCount;
         private System.Windows.Forms.DataGridView dgvStudents;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -241,6 +266,9 @@
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button btnAddSubject;
-        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ToolStrip tsSearch;
+        private System.Windows.Forms.ToolStripTextBox tstxtSearch;
+        private System.Windows.Forms.ToolStripButton tsbtnSearch;
     }
 }
