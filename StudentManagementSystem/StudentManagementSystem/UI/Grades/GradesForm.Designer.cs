@@ -31,7 +31,6 @@
             this.txtGradeName = new System.Windows.Forms.TextBox();
             this.lblGradeName = new System.Windows.Forms.Label();
             this.btnAddSubject = new System.Windows.Forms.Button();
-            this.btnPrint = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
@@ -43,6 +42,8 @@
             this.dgvSubjects = new System.Windows.Forms.DataGridView();
             this.lblHead = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSubjects)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,16 +74,6 @@
             this.btnAddSubject.TabIndex = 32;
             this.btnAddSubject.Text = "Add Subject";
             this.btnAddSubject.UseVisualStyleBackColor = true;
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrint.Location = new System.Drawing.Point(56, 414);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(82, 37);
-            this.btnPrint.TabIndex = 34;
-            this.btnPrint.Text = "Print";
-            this.btnPrint.UseVisualStyleBackColor = true;
             // 
             // btnExport
             // 
@@ -194,6 +185,26 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
             // 
+            // btnPrint
+            // 
+            this.btnPrint.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrint.Location = new System.Drawing.Point(56, 414);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(82, 37);
+            this.btnPrint.TabIndex = 34;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.UseVisualStyleBackColor = true;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(186, 71);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(82, 37);
+            this.btnSearch.TabIndex = 34;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
             // GradesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,6 +214,7 @@
             this.Controls.Add(this.txtGradeName);
             this.Controls.Add(this.lblGradeName);
             this.Controls.Add(this.btnAddSubject);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnAdd);
@@ -228,7 +240,6 @@
         private System.Windows.Forms.TextBox txtGradeName;
         private System.Windows.Forms.Label lblGradeName;
         private System.Windows.Forms.Button btnAddSubject;
-        private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnEdit;
@@ -240,5 +251,7 @@
         private System.Windows.Forms.DataGridView dgvSubjects;
         private System.Windows.Forms.Label lblHead;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

@@ -185,17 +185,17 @@
     <Compile Include="UI\Teachers\ShowTeacherForm.Designer.cs">
       <DependentUpon>ShowTeacherForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Users\LoginForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Users\LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\Users\RegistrationForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\Users\RegistrationForm.Designer.cs">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Users\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Users\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -206,6 +206,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\DashboardForm.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\GradeSubject\GradeSubjectForm.resx">
       <DependentUpon>GradeSubjectForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -251,11 +254,11 @@
     <EmbeddedResource Include="UI\Teachers\ShowTeacherForm.resx">
       <DependentUpon>ShowTeacherForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Users\LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\Users\RegistrationForm.resx">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Users\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

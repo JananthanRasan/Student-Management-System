@@ -42,6 +42,7 @@
             this.lblCount = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.lblHead = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTeachers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -185,11 +186,22 @@
             this.lblHead.Text = "Teachers";
             this.lblHead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(199, 63);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(82, 37);
+            this.btnSearch.TabIndex = 35;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
             // ListTeachersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(851, 455);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnShow);
             this.Controls.Add(this.btnAddSubject);
             this.Controls.Add(this.btnPrint);
@@ -229,5 +241,6 @@
         private System.Windows.Forms.Label lblCount;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label lblHead;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

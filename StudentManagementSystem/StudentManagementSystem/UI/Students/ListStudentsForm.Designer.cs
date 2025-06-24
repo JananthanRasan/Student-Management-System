@@ -42,6 +42,7 @@
             this.btnExport = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
             this.btnAddSubject = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.SuspendLayout();
             // 
@@ -185,11 +186,22 @@
             this.btnAddSubject.Text = "Add Subject";
             this.btnAddSubject.UseVisualStyleBackColor = true;
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(188, 56);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(82, 37);
+            this.btnSearch.TabIndex = 35;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
             // ListStudentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(851, 455);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnShow);
             this.Controls.Add(this.btnAddSubject);
             this.Controls.Add(this.btnPrint);
@@ -229,5 +241,6 @@
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button btnAddSubject;
+        private System.Windows.Forms.Button btnSearch;
     }
 }
