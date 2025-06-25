@@ -55,10 +55,10 @@
             // 
             // lblHead
             // 
-            this.lblHead.BackColor = System.Drawing.SystemColors.Highlight;
+            this.lblHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.lblHead.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblHead.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHead.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.lblHead.Location = new System.Drawing.Point(0, 0);
             this.lblHead.Name = "lblHead";
             this.lblHead.Size = new System.Drawing.Size(982, 45);
@@ -68,6 +68,7 @@
             // 
             // dgvSubjects
             // 
+            this.dgvSubjects.BackgroundColor = System.Drawing.Color.White;
             this.dgvSubjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSubjects.Location = new System.Drawing.Point(12, 105);
             this.dgvSubjects.Name = "dgvSubjects";
@@ -105,7 +106,7 @@
             // lblSubjectCode
             // 
             this.lblSubjectCode.AutoSize = true;
-            this.lblSubjectCode.BackColor = System.Drawing.Color.PeachPuff;
+            this.lblSubjectCode.BackColor = System.Drawing.Color.Transparent;
             this.lblSubjectCode.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubjectCode.Location = new System.Drawing.Point(546, 239);
             this.lblSubjectCode.Name = "lblSubjectCode";
@@ -116,7 +117,7 @@
             // lblSubjectName
             // 
             this.lblSubjectName.AutoSize = true;
-            this.lblSubjectName.BackColor = System.Drawing.Color.PeachPuff;
+            this.lblSubjectName.BackColor = System.Drawing.Color.Transparent;
             this.lblSubjectName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubjectName.Location = new System.Drawing.Point(546, 166);
             this.lblSubjectName.Name = "lblSubjectName";
@@ -143,13 +144,13 @@
             this.tsbtnSearch});
             this.tsSearch.Location = new System.Drawing.Point(12, 57);
             this.tsSearch.Name = "tsSearch";
-            this.tsSearch.Size = new System.Drawing.Size(177, 35);
+            this.tsSearch.Size = new System.Drawing.Size(208, 35);
             this.tsSearch.TabIndex = 37;
             this.tsSearch.Text = "toolStrip1";
             // 
             // tstxtSearch
             // 
-            this.tstxtSearch.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.tstxtSearch.BackColor = System.Drawing.Color.White;
             this.tstxtSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tstxtSearch.ForeColor = System.Drawing.Color.Black;
             this.tstxtSearch.Name = "tstxtSearch";
@@ -168,6 +169,7 @@
             // 
             // btnEdit
             // 
+            this.btnEdit.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.Image = global::StudentManagementSystem.Properties.Resources.edit__1_;
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -177,10 +179,11 @@
             this.btnEdit.TabIndex = 46;
             this.btnEdit.Text = "Edit";
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.UseVisualStyleBackColor = false;
             // 
             // btnDelete
             // 
+            this.btnDelete.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Image = global::StudentManagementSystem.Properties.Resources.delete;
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -190,10 +193,11 @@
             this.btnDelete.TabIndex = 47;
             this.btnDelete.Text = "Delete";
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
             // btnRefresh
             // 
+            this.btnRefresh.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.refresh;
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -203,10 +207,11 @@
             this.btnRefresh.TabIndex = 48;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.UseVisualStyleBackColor = false;
             // 
             // btnClose
             // 
+            this.btnClose.BackColor = System.Drawing.Color.LightSlateGray;
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -216,10 +221,11 @@
             this.btnClose.TabIndex = 49;
             this.btnClose.Text = "Close";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.UseVisualStyleBackColor = false;
             // 
             // btnAddSubject
             // 
+            this.btnAddSubject.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnAddSubject.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddSubject.Image = global::StudentManagementSystem.Properties.Resources.image_gallery;
             this.btnAddSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -229,10 +235,11 @@
             this.btnAddSubject.TabIndex = 50;
             this.btnAddSubject.Text = "Add Subject";
             this.btnAddSubject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAddSubject.UseVisualStyleBackColor = true;
+            this.btnAddSubject.UseVisualStyleBackColor = false;
             // 
             // btnAddGrade
             // 
+            this.btnAddGrade.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnAddGrade.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddGrade.BackgroundImage")));
             this.btnAddGrade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnAddGrade.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -244,10 +251,11 @@
             this.btnAddGrade.TabIndex = 51;
             this.btnAddGrade.Text = "Add Grade";
             this.btnAddGrade.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAddGrade.UseVisualStyleBackColor = true;
+            this.btnAddGrade.UseVisualStyleBackColor = false;
             // 
             // btnAddTeacher
             // 
+            this.btnAddTeacher.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnAddTeacher.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddTeacher.Image = global::StudentManagementSystem.Properties.Resources.add_user;
             this.btnAddTeacher.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -257,10 +265,11 @@
             this.btnAddTeacher.TabIndex = 52;
             this.btnAddTeacher.Text = "Add Teacher";
             this.btnAddTeacher.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAddTeacher.UseVisualStyleBackColor = true;
+            this.btnAddTeacher.UseVisualStyleBackColor = false;
             // 
             // btnPrint
             // 
+            this.btnPrint.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnPrint.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrint.Image = global::StudentManagementSystem.Properties.Resources.printer;
             this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -270,10 +279,11 @@
             this.btnPrint.TabIndex = 53;
             this.btnPrint.Text = "Print";
             this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.UseVisualStyleBackColor = false;
             // 
             // btnExport
             // 
+            this.btnExport.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnExport.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExport.Image = global::StudentManagementSystem.Properties.Resources.export;
             this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -283,12 +293,13 @@
             this.btnExport.TabIndex = 54;
             this.btnExport.Text = "Export";
             this.btnExport.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.UseVisualStyleBackColor = false;
             // 
             // SubjectsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(982, 463);
             this.ControlBox = false;
             this.Controls.Add(this.btnPrint);

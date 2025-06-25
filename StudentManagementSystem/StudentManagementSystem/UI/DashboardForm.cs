@@ -37,20 +37,6 @@ namespace StudentManagementSystem.UI
             frm.Show();
         }
 
-        private void editToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            EditStudentForm frm = new EditStudentForm();
-            frm.MdiParent = this;
-            frm.Show();
-        }
-
-        private void showToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ShowStudentForm frm = new ShowStudentForm();
-            frm.MdiParent = this;
-            frm.Show();
-        }
-
         private void addNewTeacherToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CreateTeacherForm frm = new CreateTeacherForm();
@@ -61,20 +47,6 @@ namespace StudentManagementSystem.UI
         private void teacherListToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ListTeachersForm frm = new ListTeachersForm();
-            frm.MdiParent = this;
-            frm.Show();
-        }
-
-        private void editTeacherToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            EditTeacherForm frm = new EditTeacherForm();
-            frm.MdiParent = this;
-            frm.Show();
-        }
-
-        private void showTeacherToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ShowTeacherForm frm = new ShowTeacherForm();
             frm.MdiParent = this;
             frm.Show();
         }

@@ -73,12 +73,6 @@
     <Compile Include="DAL\SubjectTeacherDal.cs" />
     <Compile Include="DAL\TeacherDal.cs" />
     <Compile Include="DAL\UserDal.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Model\Grade.cs" />
     <Compile Include="Model\GradeSubject.cs" />
     <Compile Include="Model\Student.cs" />
