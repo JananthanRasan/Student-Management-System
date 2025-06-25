@@ -31,21 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GradesForm));
             this.txtGradeName = new System.Windows.Forms.TextBox();
             this.lblGradeName = new System.Windows.Forms.Label();
-            this.btnAddSubject = new System.Windows.Forms.Button();
-            this.btnExport = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvSubjects = new System.Windows.Forms.DataGridView();
             this.lblHead = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnAddSubject = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
-            this.tsSearch = new System.Windows.Forms.ToolStrip();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnAddGrade = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.tstxtSearch = new System.Windows.Forms.ToolStripTextBox();
             this.tsbtnSearch = new System.Windows.Forms.ToolStripButton();
+            this.tsSearch = new System.Windows.Forms.ToolStrip();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSubjects)).BeginInit();
             this.tsSearch.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +53,7 @@
             // txtGradeName
             // 
             this.txtGradeName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGradeName.Location = new System.Drawing.Point(586, 185);
+            this.txtGradeName.Location = new System.Drawing.Point(586, 293);
             this.txtGradeName.Name = "txtGradeName";
             this.txtGradeName.Size = new System.Drawing.Size(211, 35);
             this.txtGradeName.TabIndex = 43;
@@ -62,81 +62,11 @@
             // 
             this.lblGradeName.AutoSize = true;
             this.lblGradeName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGradeName.Location = new System.Drawing.Point(427, 188);
+            this.lblGradeName.Location = new System.Drawing.Point(427, 296);
             this.lblGradeName.Name = "lblGradeName";
             this.lblGradeName.Size = new System.Drawing.Size(130, 30);
             this.lblGradeName.TabIndex = 42;
             this.lblGradeName.Text = "Grade Name";
-            // 
-            // btnAddSubject
-            // 
-            this.btnAddSubject.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddSubject.Location = new System.Drawing.Point(232, 414);
-            this.btnAddSubject.Name = "btnAddSubject";
-            this.btnAddSubject.Size = new System.Drawing.Size(125, 37);
-            this.btnAddSubject.TabIndex = 32;
-            this.btnAddSubject.Text = "Add Subject";
-            this.btnAddSubject.UseVisualStyleBackColor = true;
-            // 
-            // btnExport
-            // 
-            this.btnExport.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExport.Location = new System.Drawing.Point(144, 414);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(82, 37);
-            this.btnExport.TabIndex = 35;
-            this.btnExport.Text = "Export";
-            this.btnExport.UseVisualStyleBackColor = true;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(363, 414);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(82, 37);
-            this.btnAdd.TabIndex = 36;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(451, 414);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(82, 37);
-            this.btnEdit.TabIndex = 37;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(539, 414);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(82, 37);
-            this.btnDelete.TabIndex = 38;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.Location = new System.Drawing.Point(627, 414);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(82, 37);
-            this.btnRefresh.TabIndex = 39;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(715, 414);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(82, 37);
-            this.btnClose.TabIndex = 40;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -179,28 +109,111 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
             // 
+            // btnAddSubject
+            // 
+            this.btnAddSubject.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddSubject.Image = global::StudentManagementSystem.Properties.Resources.image_gallery;
+            this.btnAddSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddSubject.Location = new System.Drawing.Point(245, 414);
+            this.btnAddSubject.Name = "btnAddSubject";
+            this.btnAddSubject.Size = new System.Drawing.Size(147, 37);
+            this.btnAddSubject.TabIndex = 32;
+            this.btnAddSubject.Text = "Add Subject";
+            this.btnAddSubject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddSubject.UseVisualStyleBackColor = true;
+            // 
             // btnPrint
             // 
             this.btnPrint.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrint.Location = new System.Drawing.Point(56, 414);
+            this.btnPrint.Image = global::StudentManagementSystem.Properties.Resources.printer;
+            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrint.Location = new System.Drawing.Point(42, 414);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(82, 37);
+            this.btnPrint.Size = new System.Drawing.Size(88, 37);
             this.btnPrint.TabIndex = 34;
             this.btnPrint.Text = "Print";
+            this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPrint.UseVisualStyleBackColor = true;
             // 
-            // tsSearch
+            // btnExport
             // 
-            this.tsSearch.Dock = System.Windows.Forms.DockStyle.None;
-            this.tsSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tsSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tstxtSearch,
-            this.tsbtnSearch});
-            this.tsSearch.Location = new System.Drawing.Point(10, 62);
-            this.tsSearch.Name = "tsSearch";
-            this.tsSearch.Size = new System.Drawing.Size(177, 35);
-            this.tsSearch.TabIndex = 45;
-            this.tsSearch.Text = "toolStrip1";
+            this.btnExport.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExport.Image = global::StudentManagementSystem.Properties.Resources.export;
+            this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExport.Location = new System.Drawing.Point(136, 414);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(103, 37);
+            this.btnExport.TabIndex = 35;
+            this.btnExport.Text = "Export";
+            this.btnExport.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExport.UseVisualStyleBackColor = true;
+            // 
+            // btnAddGrade
+            // 
+            this.btnAddGrade.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddGrade.BackgroundImage")));
+            this.btnAddGrade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAddGrade.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddGrade.Image = global::StudentManagementSystem.Properties.Resources.image_gallery;
+            this.btnAddGrade.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddGrade.Location = new System.Drawing.Point(662, 356);
+            this.btnAddGrade.Name = "btnAddGrade";
+            this.btnAddGrade.Size = new System.Drawing.Size(135, 37);
+            this.btnAddGrade.TabIndex = 36;
+            this.btnAddGrade.Text = "Add Grade";
+            this.btnAddGrade.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddGrade.UseVisualStyleBackColor = true;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.Image = global::StudentManagementSystem.Properties.Resources.edit__1_;
+            this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEdit.Location = new System.Drawing.Point(398, 414);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(82, 37);
+            this.btnEdit.TabIndex = 37;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEdit.UseVisualStyleBackColor = true;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Image = global::StudentManagementSystem.Properties.Resources.delete;
+            this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDelete.Location = new System.Drawing.Point(486, 414);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(99, 37);
+            this.btnDelete.TabIndex = 38;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.refresh;
+            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRefresh.Location = new System.Drawing.Point(591, 414);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(108, 37);
+            this.btnRefresh.TabIndex = 39;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(705, 414);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(92, 37);
+            this.btnClose.TabIndex = 40;
+            this.btnClose.Text = "Close";
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClose.UseVisualStyleBackColor = true;
             // 
             // tstxtSearch
             // 
@@ -221,6 +234,19 @@
             this.tsbtnSearch.Size = new System.Drawing.Size(23, 32);
             this.tsbtnSearch.Text = "Search";
             // 
+            // tsSearch
+            // 
+            this.tsSearch.Dock = System.Windows.Forms.DockStyle.None;
+            this.tsSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tstxtSearch,
+            this.tsbtnSearch});
+            this.tsSearch.Location = new System.Drawing.Point(10, 62);
+            this.tsSearch.Name = "tsSearch";
+            this.tsSearch.Size = new System.Drawing.Size(177, 35);
+            this.tsSearch.TabIndex = 45;
+            this.tsSearch.Text = "toolStrip1";
+            // 
             // GradesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -234,7 +260,7 @@
             this.Controls.Add(this.btnAddSubject);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnExport);
-            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnAddGrade);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnRefresh);
@@ -259,7 +285,7 @@
         private System.Windows.Forms.Label lblGradeName;
         private System.Windows.Forms.Button btnAddSubject;
         private System.Windows.Forms.Button btnExport;
-        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnAddGrade;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnRefresh;
@@ -269,8 +295,8 @@
         private System.Windows.Forms.Label lblHead;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnPrint;
-        private System.Windows.Forms.ToolStrip tsSearch;
         private System.Windows.Forms.ToolStripTextBox tstxtSearch;
         private System.Windows.Forms.ToolStripButton tsbtnSearch;
+        private System.Windows.Forms.ToolStrip tsSearch;
     }
 }

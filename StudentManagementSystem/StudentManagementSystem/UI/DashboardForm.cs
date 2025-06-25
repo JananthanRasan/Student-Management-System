@@ -2,6 +2,7 @@
 using StudentManagementSystem.UI.Students;
 using StudentManagementSystem.UI.Subjects;
 using StudentManagementSystem.UI.Teachers;
+using StudentManagementSystem.UI.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -88,6 +89,13 @@ namespace StudentManagementSystem.UI
         private void sUBJECTToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SubjectsForm frm = new SubjectsForm();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void addNewUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistrationForm frm = new RegistrationForm();
             frm.MdiParent = this;
             frm.Show();
         }
