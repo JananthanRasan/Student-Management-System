@@ -35,6 +35,7 @@
             this.dgvSubjects = new System.Windows.Forms.DataGridView();
             this.lblHead = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAddSubject = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
@@ -43,17 +44,20 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tsSearch = new System.Windows.Forms.ToolStrip();
             this.tstxtSearch = new System.Windows.Forms.ToolStripTextBox();
             this.tsbtnSearch = new System.Windows.Forms.ToolStripButton();
-            this.tsSearch = new System.Windows.Forms.ToolStrip();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSubjects)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tsSearch.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtGradeName
             // 
+            this.txtGradeName.BackColor = System.Drawing.Color.White;
             this.txtGradeName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGradeName.Location = new System.Drawing.Point(586, 293);
+            this.txtGradeName.Location = new System.Drawing.Point(591, 276);
             this.txtGradeName.Name = "txtGradeName";
             this.txtGradeName.Size = new System.Drawing.Size(211, 35);
             this.txtGradeName.TabIndex = 43;
@@ -61,8 +65,9 @@
             // lblGradeName
             // 
             this.lblGradeName.AutoSize = true;
+            this.lblGradeName.BackColor = System.Drawing.Color.Transparent;
             this.lblGradeName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGradeName.Location = new System.Drawing.Point(427, 296);
+            this.lblGradeName.Location = new System.Drawing.Point(432, 279);
             this.lblGradeName.Name = "lblGradeName";
             this.lblGradeName.Size = new System.Drawing.Size(130, 30);
             this.lblGradeName.TabIndex = 42;
@@ -92,7 +97,7 @@
             this.lblHead.BackColor = System.Drawing.SystemColors.Highlight;
             this.lblHead.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblHead.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHead.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.lblHead.Location = new System.Drawing.Point(0, 0);
             this.lblHead.Name = "lblHead";
             this.lblHead.Size = new System.Drawing.Size(809, 45);
@@ -109,6 +114,21 @@
             this.groupBox2.TabIndex = 44;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Image = global::StudentManagementSystem.Properties.Resources.system_update;
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdate.Location = new System.Drawing.Point(541, 356);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(115, 37);
+            this.btnUpdate.TabIndex = 98;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Visible = false;
             // 
             // btnAddSubject
             // 
@@ -223,9 +243,34 @@
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClose.UseVisualStyleBackColor = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.AliceBlue;
+            this.pictureBox1.Image = global::StudentManagementSystem.Properties.Resources.ai_generated_education_poster_template_with_large_copy_space_for_text_free_photo__4_;
+            this.pictureBox1.Location = new System.Drawing.Point(420, 45);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(389, 355);
+            this.pictureBox1.TabIndex = 99;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tsSearch
+            // 
+            this.tsSearch.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.tsSearch.Dock = System.Windows.Forms.DockStyle.None;
+            this.tsSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsSearch.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.tsSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tstxtSearch,
+            this.tsbtnSearch});
+            this.tsSearch.Location = new System.Drawing.Point(10, 64);
+            this.tsSearch.Name = "tsSearch";
+            this.tsSearch.Size = new System.Drawing.Size(168, 35);
+            this.tsSearch.TabIndex = 100;
+            this.tsSearch.Text = "toolStrip1";
+            // 
             // tstxtSearch
             // 
-            this.tstxtSearch.BackColor = System.Drawing.Color.White;
+            this.tstxtSearch.BackColor = System.Drawing.Color.AliceBlue;
             this.tstxtSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tstxtSearch.ForeColor = System.Drawing.Color.Black;
             this.tstxtSearch.Name = "tstxtSearch";
@@ -242,19 +287,6 @@
             this.tsbtnSearch.Size = new System.Drawing.Size(23, 32);
             this.tsbtnSearch.Text = "Search";
             // 
-            // tsSearch
-            // 
-            this.tsSearch.Dock = System.Windows.Forms.DockStyle.None;
-            this.tsSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tsSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tstxtSearch,
-            this.tsbtnSearch});
-            this.tsSearch.Location = new System.Drawing.Point(10, 62);
-            this.tsSearch.Name = "tsSearch";
-            this.tsSearch.Size = new System.Drawing.Size(177, 35);
-            this.tsSearch.TabIndex = 45;
-            this.tsSearch.Text = "toolStrip1";
-            // 
             // GradesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -262,9 +294,10 @@
             this.ClientSize = new System.Drawing.Size(809, 463);
             this.ControlBox = false;
             this.Controls.Add(this.tsSearch);
+            this.Controls.Add(this.lblGradeName);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.txtGradeName);
-            this.Controls.Add(this.lblGradeName);
             this.Controls.Add(this.btnAddSubject);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnExport);
@@ -276,10 +309,12 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvSubjects);
             this.Controls.Add(this.lblHead);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "GradesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grades";
             ((System.ComponentModel.ISupportInitialize)(this.dgvSubjects)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tsSearch.ResumeLayout(false);
             this.tsSearch.PerformLayout();
             this.ResumeLayout(false);
@@ -303,8 +338,10 @@
         private System.Windows.Forms.Label lblHead;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStrip tsSearch;
         private System.Windows.Forms.ToolStripTextBox tstxtSearch;
         private System.Windows.Forms.ToolStripButton tsbtnSearch;
-        private System.Windows.Forms.ToolStrip tsSearch;
     }
 }

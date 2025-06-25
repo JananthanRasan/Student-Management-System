@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\studentmanagementsystem\\ui\\grades\\gradesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\ui\\grades\\gradesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\studentmanagementsystem\\ui\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\ui\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|e:\\github\\student-management-system\\studentmanagementsystem\\studentmanagementsystem\\ui\\students\\liststudentsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\ui\\students\\liststudentsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\studentmanagementsystem\\ui\\teachers\\showteacherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\ui\\teachers\\showteacherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\studentmanagementsystem\\ui\\students\\editstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\ui\\students\\editstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\studentmanagementsystem\\ui\\gradesubject\\subjectgradeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\ui\\gradesubject\\subjectgradeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\studentmanagementsystem\\ui\\students\\editstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\ui\\students\\editstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\studentmanagementsystem\\ui\\grades\\gradesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\ui\\grades\\gradesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\studentmanagementsystem\\ui\\teachers\\listteachersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\ui\\teachers\\listteachersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\studentmanagementsystem\\ui\\teachers\\createteacherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -21,14 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\studentmanagementsystem\\ui\\users\\registrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\ui\\users\\registrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\studentmanagementsystem\\ui\\teachers\\showteacherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\ui\\teachers\\showteacherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\studentmanagementsystem\\ui\\teachers\\listteachersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\ui\\teachers\\listteachersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\studentmanagementsystem\\ui\\teachers\\editteacherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -59,16 +67,8 @@
       "RelativeMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\ui\\students\\createstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|e:\\github\\student-management-system\\studentmanagementsystem\\studentmanagementsystem\\ui\\students\\liststudentsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\ui\\students\\liststudentsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\studentmanagementsystem\\ui\\subjects\\subjectsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\ui\\subjects\\subjectsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\studentmanagementsystem\\ui\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\ui\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A51D00B7-1B36-46F5-975B-111EAA502B07}|StudentManagementSystem\\StudentManagementSystem.csproj|E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\studentmanagementsystem\\ui\\gradesubject\\gradesubjectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -82,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,19 +106,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 0,
               "Title": "DashboardForm.cs [Design]",
               "DocumentMoniker": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\DashboardForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\UI\\DashboardForm.cs",
-              "ToolTip": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\DashboardForm.cs [Design]",
-              "RelativeToolTip": "StudentManagementSystem\\UI\\DashboardForm.cs [Design]",
+              "ToolTip": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\DashboardForm.cs [Design]*",
+              "RelativeToolTip": "StudentManagementSystem\\UI\\DashboardForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-23T16:48:19.103Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "SubjectsForm.cs [Design]",
               "DocumentMoniker": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\Subjects\\SubjectsForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\UI\\Subjects\\SubjectsForm.cs",
@@ -130,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "ListStudentsForm.cs [Design]",
               "DocumentMoniker": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\Students\\ListStudentsForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\UI\\Students\\ListStudentsForm.cs",
@@ -142,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "CreateStudentForm.cs [Design]",
               "DocumentMoniker": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\Students\\CreateStudentForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\UI\\Students\\CreateStudentForm.cs",
@@ -154,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "ShowStudentForm.cs [Design]",
               "DocumentMoniker": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\Students\\ShowStudentForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\UI\\Students\\ShowStudentForm.cs",
@@ -166,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "StudentSubjectForm.cs [Design]",
               "DocumentMoniker": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\StudentSubject\\StudentSubjectForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\UI\\StudentSubject\\StudentSubjectForm.cs",
@@ -178,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "SubjectTeacherForm.cs [Design]",
               "DocumentMoniker": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\SubjectTeacher\\SubjectTeacherForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\UI\\SubjectTeacher\\SubjectTeacherForm.cs",
@@ -190,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "TeacherSubjectForm.cs [Design]",
               "DocumentMoniker": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\SubjectTeacher\\TeacherSubjectForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\UI\\SubjectTeacher\\TeacherSubjectForm.cs",
@@ -202,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\Users\\LoginForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\UI\\Users\\LoginForm.cs",
@@ -214,12 +214,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "EditTeacherForm.cs [Design]",
               "DocumentMoniker": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\Teachers\\EditTeacherForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\UI\\Teachers\\EditTeacherForm.cs",
-              "ToolTip": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\Teachers\\EditTeacherForm.cs [Design]*",
-              "RelativeToolTip": "StudentManagementSystem\\UI\\Teachers\\EditTeacherForm.cs [Design]*",
+              "ToolTip": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\Teachers\\EditTeacherForm.cs [Design]",
+              "RelativeToolTip": "StudentManagementSystem\\UI\\Teachers\\EditTeacherForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-23T08:23:07.693Z",
               "EditorCaption": " [Design]"
@@ -238,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "ShowTeacherForm.cs [Design]",
               "DocumentMoniker": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\Teachers\\ShowTeacherForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\UI\\Teachers\\ShowTeacherForm.cs",
@@ -250,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "RegistrationForm.cs [Design]",
               "DocumentMoniker": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\Users\\RegistrationForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\UI\\Users\\RegistrationForm.cs",
@@ -262,31 +262,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "CreateTeacherForm.cs [Design]",
               "DocumentMoniker": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\Teachers\\CreateTeacherForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\UI\\Teachers\\CreateTeacherForm.cs",
-              "ToolTip": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\Teachers\\CreateTeacherForm.cs [Design]*",
-              "RelativeToolTip": "StudentManagementSystem\\UI\\Teachers\\CreateTeacherForm.cs [Design]*",
+              "ToolTip": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\Teachers\\CreateTeacherForm.cs [Design]",
+              "RelativeToolTip": "StudentManagementSystem\\UI\\Teachers\\CreateTeacherForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-23T08:17:08.483Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "EditStudentForm.cs [Design]",
               "DocumentMoniker": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\Students\\EditStudentForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\UI\\Students\\EditStudentForm.cs",
-              "ToolTip": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\Students\\EditStudentForm.cs [Design]*",
-              "RelativeToolTip": "StudentManagementSystem\\UI\\Students\\EditStudentForm.cs [Design]*",
+              "ToolTip": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\Students\\EditStudentForm.cs [Design]",
+              "RelativeToolTip": "StudentManagementSystem\\UI\\Students\\EditStudentForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-23T08:20:23.243Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "SubjectGradeForm.cs [Design]",
               "DocumentMoniker": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\GradeSubject\\SubjectGradeForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\UI\\GradeSubject\\SubjectGradeForm.cs",
@@ -298,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "GradesForm.cs [Design]",
               "DocumentMoniker": "E:\\GitHub\\Student-Management-System\\StudentManagementSystem\\StudentManagementSystem\\UI\\Grades\\GradesForm.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\UI\\Grades\\GradesForm.cs",

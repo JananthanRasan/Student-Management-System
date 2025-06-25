@@ -35,7 +35,6 @@
             this.lblHead = new System.Windows.Forms.Label();
             this.tsSearch = new System.Windows.Forms.ToolStrip();
             this.tstxtSearch = new System.Windows.Forms.ToolStripTextBox();
-            this.tsbtnSearch = new System.Windows.Forms.ToolStripButton();
             this.btnPrint = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
             this.btnAddSubject = new System.Windows.Forms.Button();
@@ -45,6 +44,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.btnShow = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.tsbtnSearch = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTeachers)).BeginInit();
             this.tsSearch.SuspendLayout();
             this.SuspendLayout();
@@ -83,7 +83,7 @@
             this.lblHead.BackColor = System.Drawing.SystemColors.Highlight;
             this.lblHead.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblHead.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHead.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.lblHead.Location = new System.Drawing.Point(0, 0);
             this.lblHead.Name = "lblHead";
             this.lblHead.Size = new System.Drawing.Size(981, 45);
@@ -93,35 +93,26 @@
             // 
             // tsSearch
             // 
+            this.tsSearch.BackColor = System.Drawing.Color.LightSteelBlue;
             this.tsSearch.Dock = System.Windows.Forms.DockStyle.None;
             this.tsSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsSearch.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.tsSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tstxtSearch,
             this.tsbtnSearch});
             this.tsSearch.Location = new System.Drawing.Point(13, 64);
             this.tsSearch.Name = "tsSearch";
-            this.tsSearch.Size = new System.Drawing.Size(177, 35);
+            this.tsSearch.Size = new System.Drawing.Size(168, 35);
             this.tsSearch.TabIndex = 37;
             this.tsSearch.Text = "toolStrip1";
             // 
             // tstxtSearch
             // 
-            this.tstxtSearch.BackColor = System.Drawing.Color.White;
+            this.tstxtSearch.BackColor = System.Drawing.Color.AliceBlue;
             this.tstxtSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tstxtSearch.ForeColor = System.Drawing.Color.Black;
             this.tstxtSearch.Name = "tstxtSearch";
             this.tstxtSearch.Size = new System.Drawing.Size(140, 35);
-            // 
-            // tsbtnSearch
-            // 
-            this.tsbtnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.tsbtnSearch.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbtnSearch.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tsbtnSearch.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnSearch.Image")));
-            this.tsbtnSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbtnSearch.Name = "tsbtnSearch";
-            this.tsbtnSearch.Size = new System.Drawing.Size(23, 32);
-            this.tsbtnSearch.Text = "Search";
             // 
             // btnPrint
             // 
@@ -248,6 +239,17 @@
             this.btnAdd.Text = "Add";
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdd.UseVisualStyleBackColor = false;
+            // 
+            // tsbtnSearch
+            // 
+            this.tsbtnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.tsbtnSearch.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbtnSearch.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tsbtnSearch.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnSearch.Image")));
+            this.tsbtnSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbtnSearch.Name = "tsbtnSearch";
+            this.tsbtnSearch.Size = new System.Drawing.Size(23, 32);
+            this.tsbtnSearch.Text = "Search";
             // 
             // ListTeachersForm
             // 

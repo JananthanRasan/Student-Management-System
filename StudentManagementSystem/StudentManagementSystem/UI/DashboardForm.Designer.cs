@@ -77,6 +77,7 @@
             // 
             // addNewStudentToolStripMenuItem
             // 
+            this.addNewStudentToolStripMenuItem.BackColor = System.Drawing.Color.LightSteelBlue;
             this.addNewStudentToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addNewStudentToolStripMenuItem.Name = "addNewStudentToolStripMenuItem";
             this.addNewStudentToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
@@ -85,6 +86,7 @@
             // 
             // studentsListToolStripMenuItem
             // 
+            this.studentsListToolStripMenuItem.BackColor = System.Drawing.Color.LightSteelBlue;
             this.studentsListToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentsListToolStripMenuItem.Name = "studentsListToolStripMenuItem";
             this.studentsListToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
@@ -107,6 +109,7 @@
             // 
             // addNewTeacherToolStripMenuItem
             // 
+            this.addNewTeacherToolStripMenuItem.BackColor = System.Drawing.Color.LightSteelBlue;
             this.addNewTeacherToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addNewTeacherToolStripMenuItem.Name = "addNewTeacherToolStripMenuItem";
             this.addNewTeacherToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
@@ -115,6 +118,7 @@
             // 
             // teacherListToolStripMenuItem
             // 
+            this.teacherListToolStripMenuItem.BackColor = System.Drawing.Color.LightSteelBlue;
             this.teacherListToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.teacherListToolStripMenuItem.Name = "teacherListToolStripMenuItem";
             this.teacherListToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
@@ -161,6 +165,7 @@
             // 
             // addNewUserToolStripMenuItem
             // 
+            this.addNewUserToolStripMenuItem.BackColor = System.Drawing.Color.LightSteelBlue;
             this.addNewUserToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addNewUserToolStripMenuItem.Name = "addNewUserToolStripMenuItem";
             this.addNewUserToolStripMenuItem.Size = new System.Drawing.Size(182, 26);

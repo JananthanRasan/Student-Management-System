@@ -53,7 +53,7 @@
             this.lblHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.lblHead.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblHead.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHead.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.lblHead.Location = new System.Drawing.Point(0, 0);
             this.lblHead.Name = "lblHead";
             this.lblHead.Size = new System.Drawing.Size(432, 45);
