@@ -25,4 +25,10 @@ E:\GitHub\Student-Management-System\StudentManagementSystem\StudentManagementSys
 E:\GitHub\Student-Management-System\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.csproj.CoreCompileInputs.cache
 E:\GitHub\Student-Management-System\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.exe
 E:\GitHub\Student-Management-System\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.pdb
+E:\GitHub\Student-Management-System\StudentManagementSystem\StudentManagementSystem\bin\Debug\MySql.Data.dll
+E:\GitHub\Student-Management-System\StudentManagementSystem\StudentManagementSystem\bin\Debug\System.Configuration.ConfigurationManager.dll
+E:\GitHub\Student-Management-System\StudentManagementSystem\StudentManagementSystem\bin\Debug\System.Memory.dll
+E:\GitHub\Student-Management-System\StudentManagementSystem\StudentManagementSystem\bin\Debug\System.Numerics.Vectors.dll
+E:\GitHub\Student-Management-System\StudentManagementSystem\StudentManagementSystem\bin\Debug\System.Configuration.ConfigurationManager.xml
+E:\GitHub\Student-Management-System\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentM.D74F523C.Up2Date
 E:\GitHub\Student-Management-System\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.exe.config

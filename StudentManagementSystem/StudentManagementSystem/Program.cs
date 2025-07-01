@@ -1,4 +1,5 @@
 ﻿using StudentManagementSystem.UI;
+using StudentManagementSystem.UI.Students;
 using StudentManagementSystem.UI.Users;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace StudentManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DashboardForm());
+            Application.Run(new ListStudentsForm());
         }
     }
 }

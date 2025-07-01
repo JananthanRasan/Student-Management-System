@@ -93,60 +93,6 @@ namespace StudentManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ai_generated_education_poster_template_with_large_copy_space_for_text_free_photo {
-            get {
-                object obj = ResourceManager.GetObject("ai-generated-education-poster-template-with-large-copy-space-for-text-free-photo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ai_generated_education_poster_template_with_large_copy_space_for_text_free_photo__1_ {
-            get {
-                object obj = ResourceManager.GetObject("ai-generated-education-poster-template-with-large-copy-space-for-text-free-photo " +
-                        "(1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ai_generated_education_poster_template_with_large_copy_space_for_text_free_photo__2_ {
-            get {
-                object obj = ResourceManager.GetObject("ai-generated-education-poster-template-with-large-copy-space-for-text-free-photo " +
-                        "(2)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ai_generated_education_poster_template_with_large_copy_space_for_text_free_photo__3_ {
-            get {
-                object obj = ResourceManager.GetObject("ai-generated-education-poster-template-with-large-copy-space-for-text-free-photo " +
-                        "(3)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ai_generated_education_poster_template_with_large_copy_space_for_text_free_photo__4_ {
-            get {
-                object obj = ResourceManager.GetObject("ai-generated-education-poster-template-with-large-copy-space-for-text-free-photo " +
-                        "(4)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap book {
             get {
                 object obj = ResourceManager.GetObject("book", resourceCulture);
@@ -237,16 +183,6 @@ namespace StudentManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap grade {
-            get {
-                object obj = ResourceManager.GetObject("grade", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap image_gallery {
             get {
                 object obj = ResourceManager.GetObject("image-gallery", resourceCulture);
@@ -297,19 +233,9 @@ namespace StudentManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ser__1_ {
+        internal static System.Drawing.Bitmap sff__1_1 {
             get {
-                object obj = ResourceManager.GetObject("ser (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap sff__1_ {
-            get {
-                object obj = ResourceManager.GetObject("sff (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("sff (1)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -337,16 +263,6 @@ namespace StudentManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap subj__1_ {
-            get {
-                object obj = ResourceManager.GetObject("subj (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap system_update {
             get {
                 object obj = ResourceManager.GetObject("system-update", resourceCulture);
@@ -360,16 +276,6 @@ namespace StudentManagementSystem.Properties {
         internal static System.Drawing.Bitmap teacher {
             get {
                 object obj = ResourceManager.GetObject("teacher", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap training {
-            get {
-                object obj = ResourceManager.GetObject("training", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

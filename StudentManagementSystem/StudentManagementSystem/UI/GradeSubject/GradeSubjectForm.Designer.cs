@@ -32,12 +32,12 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lvwStudents = new System.Windows.Forms.ListView();
             this.lblHead = new System.Windows.Forms.Label();
-            this.tsSearch = new System.Windows.Forms.ToolStrip();
-            this.tstxtSearch = new System.Windows.Forms.ToolStripTextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.tsSearch = new System.Windows.Forms.ToolStrip();
+            this.tstxtSearch = new System.Windows.Forms.ToolStripTextBox();
             this.tsbtnSearch = new System.Windows.Forms.ToolStripButton();
             this.tsSearch.SuspendLayout();
             this.SuspendLayout();
@@ -64,10 +64,10 @@
             // 
             // lblHead
             // 
-            this.lblHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(115)))), ((int)(((byte)(232)))));
             this.lblHead.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblHead.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.lblHead.ForeColor = System.Drawing.Color.White;
             this.lblHead.Location = new System.Drawing.Point(0, 0);
             this.lblHead.Name = "lblHead";
             this.lblHead.Size = new System.Drawing.Size(493, 45);
@@ -75,32 +75,9 @@
             this.lblHead.Text = "Specific Grade\'s* Subject";
             this.lblHead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tsSearch
-            // 
-            this.tsSearch.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.tsSearch.Dock = System.Windows.Forms.DockStyle.None;
-            this.tsSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tsSearch.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.tsSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tstxtSearch,
-            this.tsbtnSearch});
-            this.tsSearch.Location = new System.Drawing.Point(13, 80);
-            this.tsSearch.Name = "tsSearch";
-            this.tsSearch.Size = new System.Drawing.Size(168, 35);
-            this.tsSearch.TabIndex = 37;
-            this.tsSearch.Text = "toolStrip1";
-            // 
-            // tstxtSearch
-            // 
-            this.tstxtSearch.BackColor = System.Drawing.Color.AliceBlue;
-            this.tstxtSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tstxtSearch.ForeColor = System.Drawing.Color.Black;
-            this.tstxtSearch.Name = "tstxtSearch";
-            this.tstxtSearch.Size = new System.Drawing.Size(140, 35);
-            // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(240)))), ((int)(((byte)(254)))));
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Image = global::StudentManagementSystem.Properties.Resources.image_gallery;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -114,7 +91,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(240)))), ((int)(((byte)(254)))));
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Image = global::StudentManagementSystem.Properties.Resources.delete;
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -128,7 +105,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(240)))), ((int)(((byte)(254)))));
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.Image = global::StudentManagementSystem.Properties.Resources.refresh;
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -142,7 +119,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(240)))), ((int)(((byte)(254)))));
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -154,11 +131,34 @@
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClose.UseVisualStyleBackColor = false;
             // 
+            // tsSearch
+            // 
+            this.tsSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(99)))), ((int)(((byte)(104)))));
+            this.tsSearch.Dock = System.Windows.Forms.DockStyle.None;
+            this.tsSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsSearch.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.tsSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tstxtSearch,
+            this.tsbtnSearch});
+            this.tsSearch.Location = new System.Drawing.Point(13, 80);
+            this.tsSearch.Name = "tsSearch";
+            this.tsSearch.Size = new System.Drawing.Size(168, 35);
+            this.tsSearch.TabIndex = 100;
+            this.tsSearch.Text = "toolStrip1";
+            // 
+            // tstxtSearch
+            // 
+            this.tstxtSearch.BackColor = System.Drawing.Color.White;
+            this.tstxtSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tstxtSearch.ForeColor = System.Drawing.Color.Black;
+            this.tstxtSearch.Name = "tstxtSearch";
+            this.tstxtSearch.Size = new System.Drawing.Size(140, 35);
+            // 
             // tsbtnSearch
             // 
             this.tsbtnSearch.BackColor = System.Drawing.Color.Transparent;
             this.tsbtnSearch.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbtnSearch.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tsbtnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(99)))), ((int)(((byte)(104)))));
             this.tsbtnSearch.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnSearch.Image")));
             this.tsbtnSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtnSearch.Name = "tsbtnSearch";
@@ -169,14 +169,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(493, 435);
             this.ControlBox = false;
+            this.Controls.Add(this.tsSearch);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.tsSearch);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lvwStudents);
             this.Controls.Add(this.lblHead);
@@ -195,12 +195,12 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ListView lvwStudents;
         private System.Windows.Forms.Label lblHead;
-        private System.Windows.Forms.ToolStrip tsSearch;
-        private System.Windows.Forms.ToolStripTextBox tstxtSearch;
-        private System.Windows.Forms.ToolStripButton tsbtnSearch;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.ToolStrip tsSearch;
+        private System.Windows.Forms.ToolStripTextBox tstxtSearch;
+        private System.Windows.Forms.ToolStripButton tsbtnSearch;
     }
 }

@@ -44,7 +44,7 @@
             // 
             // mnsDashboard
             // 
-            this.mnsDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.mnsDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(115)))), ((int)(((byte)(232)))));
             this.mnsDashboard.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.mnsDashboard.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sTUDENTToolStripMenuItem,
@@ -61,7 +61,7 @@
             // 
             // sTUDENTToolStripMenuItem
             // 
-            this.sTUDENTToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.sTUDENTToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(115)))), ((int)(((byte)(232)))));
             this.sTUDENTToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewStudentToolStripMenuItem,
             this.studentsListToolStripMenuItem});
@@ -95,6 +95,7 @@
             // 
             // tEACHERToolStripMenuItem
             // 
+            this.tEACHERToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(115)))), ((int)(((byte)(232)))));
             this.tEACHERToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewTeacherToolStripMenuItem,
             this.teacherListToolStripMenuItem});
@@ -127,6 +128,7 @@
             // 
             // gRADEToolStripMenuItem
             // 
+            this.gRADEToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(115)))), ((int)(((byte)(232)))));
             this.gRADEToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gRADEToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.gRADEToolStripMenuItem.Image = global::StudentManagementSystem.Properties.Resources.online_learning;
@@ -139,6 +141,7 @@
             // 
             // sUBJECTToolStripMenuItem
             // 
+            this.sUBJECTToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(115)))), ((int)(((byte)(232)))));
             this.sUBJECTToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sUBJECTToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.sUBJECTToolStripMenuItem.Image = global::StudentManagementSystem.Properties.Resources.book;
@@ -151,7 +154,7 @@
             // 
             // uSERToolStripMenuItem
             // 
-            this.uSERToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.uSERToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(115)))), ((int)(((byte)(232)))));
             this.uSERToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewUserToolStripMenuItem});
             this.uSERToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -176,7 +179,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.mnsDashboard);
             this.IsMdiContainer = true;

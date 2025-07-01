@@ -43,7 +43,9 @@
             // 
             // txtFirstName
             // 
+            this.txtFirstName.BackColor = System.Drawing.Color.White;
             this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstName.ForeColor = System.Drawing.Color.Black;
             this.txtFirstName.Location = new System.Drawing.Point(153, 287);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(199, 35);
@@ -51,7 +53,9 @@
             // 
             // txtTeacherID
             // 
+            this.txtTeacherID.BackColor = System.Drawing.Color.White;
             this.txtTeacherID.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTeacherID.ForeColor = System.Drawing.Color.Black;
             this.txtTeacherID.Location = new System.Drawing.Point(153, 222);
             this.txtTeacherID.Name = "txtTeacherID";
             this.txtTeacherID.Size = new System.Drawing.Size(199, 35);
@@ -60,7 +64,9 @@
             // lblSubjectCode
             // 
             this.lblSubjectCode.AutoSize = true;
+            this.lblSubjectCode.BackColor = System.Drawing.Color.Transparent;
             this.lblSubjectCode.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubjectCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.lblSubjectCode.Location = new System.Drawing.Point(12, 292);
             this.lblSubjectCode.Name = "lblSubjectCode";
             this.lblSubjectCode.Size = new System.Drawing.Size(99, 30);
@@ -70,7 +76,9 @@
             // lblSubjectName
             // 
             this.lblSubjectName.AutoSize = true;
+            this.lblSubjectName.BackColor = System.Drawing.Color.Transparent;
             this.lblSubjectName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.lblSubjectName.Location = new System.Drawing.Point(12, 227);
             this.lblSubjectName.Name = "lblSubjectName";
             this.lblSubjectName.Size = new System.Drawing.Size(116, 30);
@@ -79,10 +87,10 @@
             // 
             // lblHead
             // 
-            this.lblHead.BackColor = System.Drawing.SystemColors.Highlight;
+            this.lblHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(115)))), ((int)(((byte)(232)))));
             this.lblHead.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblHead.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.lblHead.ForeColor = System.Drawing.Color.White;
             this.lblHead.Location = new System.Drawing.Point(0, 0);
             this.lblHead.Name = "lblHead";
             this.lblHead.Size = new System.Drawing.Size(364, 45);
@@ -104,15 +112,15 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(119, 63);
+            this.pictureBox1.Location = new System.Drawing.Point(115, 68);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(124, 129);
+            this.pictureBox1.Size = new System.Drawing.Size(128, 129);
             this.pictureBox1.TabIndex = 100;
             this.pictureBox1.TabStop = false;
             // 
             // btnCancel
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(240)))), ((int)(((byte)(254)))));
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Image = global::StudentManagementSystem.Properties.Resources.cancel;
             this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -126,7 +134,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(240)))), ((int)(((byte)(254)))));
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Image = global::StudentManagementSystem.Properties.Resources.enter;
             this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -142,7 +150,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(364, 443);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
