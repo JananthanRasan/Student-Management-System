@@ -32,7 +32,7 @@
             this.txtGradeName = new System.Windows.Forms.TextBox();
             this.lblGradeName = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dgvSubjects = new System.Windows.Forms.DataGridView();
+            this.dgvGrades = new System.Windows.Forms.DataGridView();
             this.lblHead = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnEdit = new System.Windows.Forms.Button();
@@ -53,7 +53,9 @@
             this.lblGradeColor = new System.Windows.Forms.Label();
             this.txtGradeGroup = new System.Windows.Forms.TextBox();
             this.lblGradeGroup = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSubjects)).BeginInit();
+            this.lblCount = new System.Windows.Forms.Label();
+            this.btnReset = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGrades)).BeginInit();
             this.tsSearch.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,15 +91,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // dgvSubjects
+            // dgvGrades
             // 
-            this.dgvSubjects.BackgroundColor = System.Drawing.Color.White;
-            this.dgvSubjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSubjects.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(220)))), ((int)(((byte)(224)))));
-            this.dgvSubjects.Location = new System.Drawing.Point(10, 113);
-            this.dgvSubjects.Name = "dgvSubjects";
-            this.dgvSubjects.Size = new System.Drawing.Size(404, 258);
-            this.dgvSubjects.TabIndex = 29;
+            this.dgvGrades.AllowUserToAddRows = false;
+            this.dgvGrades.BackgroundColor = System.Drawing.Color.White;
+            this.dgvGrades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGrades.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(220)))), ((int)(((byte)(224)))));
+            this.dgvGrades.Location = new System.Drawing.Point(10, 113);
+            this.dgvGrades.Name = "dgvGrades";
+            this.dgvGrades.Size = new System.Drawing.Size(404, 258);
+            this.dgvGrades.TabIndex = 29;
             // 
             // lblHead
             // 
@@ -135,6 +138,7 @@
             this.btnEdit.Text = "Edit";
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
@@ -149,6 +153,7 @@
             this.btnDelete.Text = "Delete";
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnRefresh
             // 
@@ -163,6 +168,7 @@
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnClose
             // 
@@ -177,6 +183,7 @@
             this.btnClose.Text = "Close";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnPrint
             // 
@@ -226,13 +233,15 @@
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.Image = global::StudentManagementSystem.Properties.Resources.system_update;
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(541, 354);
+            this.btnUpdate.Location = new System.Drawing.Point(662, 355);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(115, 37);
+            this.btnUpdate.Size = new System.Drawing.Size(135, 35);
             this.btnUpdate.TabIndex = 119;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Visible = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAddGrade
             // 
@@ -240,13 +249,14 @@
             this.btnAddGrade.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddGrade.Image = global::StudentManagementSystem.Properties.Resources.image_gallery;
             this.btnAddGrade.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddGrade.Location = new System.Drawing.Point(662, 355);
+            this.btnAddGrade.Location = new System.Drawing.Point(662, 353);
             this.btnAddGrade.Name = "btnAddGrade";
             this.btnAddGrade.Size = new System.Drawing.Size(135, 37);
             this.btnAddGrade.TabIndex = 120;
             this.btnAddGrade.Text = "Add Grade";
             this.btnAddGrade.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAddGrade.UseVisualStyleBackColor = false;
+            this.btnAddGrade.Click += new System.EventHandler(this.btnAddGrade_Click);
             // 
             // tsSearch
             // 
@@ -348,6 +358,33 @@
             this.lblGradeGroup.TabIndex = 42;
             this.lblGradeGroup.Text = "Grade Group";
             // 
+            // lblCount
+            // 
+            this.lblCount.AutoSize = true;
+            this.lblCount.BackColor = System.Drawing.Color.Transparent;
+            this.lblCount.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.lblCount.Location = new System.Drawing.Point(255, 73);
+            this.lblCount.Name = "lblCount";
+            this.lblCount.Size = new System.Drawing.Size(143, 25);
+            this.lblCount.TabIndex = 130;
+            this.lblCount.Text = "Num. of Grades";
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(240)))), ((int)(((byte)(254)))));
+            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Image = global::StudentManagementSystem.Properties.Resources.broom;
+            this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReset.Location = new System.Drawing.Point(560, 355);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(96, 35);
+            this.btnReset.TabIndex = 131;
+            this.btnReset.Text = "Reset";
+            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // GradesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -355,6 +392,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(809, 463);
             this.ControlBox = false;
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.lblCount);
             this.Controls.Add(this.tsSearch);
             this.Controls.Add(this.btnAddGrade);
             this.Controls.Add(this.btnUpdate);
@@ -375,12 +414,13 @@
             this.Controls.Add(this.txtGradeOrder);
             this.Controls.Add(this.txtGradeName);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dgvSubjects);
+            this.Controls.Add(this.dgvGrades);
             this.Controls.Add(this.lblHead);
             this.Name = "GradesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grades";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSubjects)).EndInit();
+            this.Load += new System.EventHandler(this.GradesForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGrades)).EndInit();
             this.tsSearch.ResumeLayout(false);
             this.tsSearch.PerformLayout();
             this.ResumeLayout(false);
@@ -393,7 +433,7 @@
         private System.Windows.Forms.TextBox txtGradeName;
         private System.Windows.Forms.Label lblGradeName;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dgvSubjects;
+        private System.Windows.Forms.DataGridView dgvGrades;
         private System.Windows.Forms.Label lblHead;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnEdit;
@@ -414,5 +454,7 @@
         private System.Windows.Forms.Label lblGradeColor;
         private System.Windows.Forms.TextBox txtGradeGroup;
         private System.Windows.Forms.Label lblGradeGroup;
+        private System.Windows.Forms.Label lblCount;
+        private System.Windows.Forms.Button btnReset;
     }
 }

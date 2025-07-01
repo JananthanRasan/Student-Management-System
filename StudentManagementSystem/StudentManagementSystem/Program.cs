@@ -1,5 +1,7 @@
 ﻿using StudentManagementSystem.UI;
+using StudentManagementSystem.UI.Grades;
 using StudentManagementSystem.UI.Students;
+using StudentManagementSystem.UI.Subjects;
 using StudentManagementSystem.UI.Teachers;
 using StudentManagementSystem.UI.Users;
 using System;
@@ -20,7 +22,7 @@ namespace StudentManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ListTeachersForm());
+            Application.Run(new GradesForm());
         }
     }
 }

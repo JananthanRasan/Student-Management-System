@@ -32,17 +32,12 @@ namespace StudentManagementSystem.DAL
             DataRow row = dt.Rows[0];
             return new Grade
             {
-                Id = Convert.ToInt32(row["id"]),
+                GradeId = Convert.ToInt32(row["id"]),
                 GradeName = row["grade_name"].ToString(),
                 GradeOrder = Convert.ToInt32(row["grade_order"]),
                 GradeColor = row["grade_color"].ToString(),
                 GradeGroup = row["grade_group"].ToString(),
-                CreatedAt = Convert.ToDateTime(row["created_at"]),
-                CreatedBy = row["created_by"]?.ToString(),
-                UpdatedAt = Convert.ToDateTime(row["updated_at"]),
-                UpdatedBy = row["updated_by"]?.ToString(),
-                DeletedAt = Convert.ToDateTime(row["deleted_at"]),
-                DeletedBy = row["deleted_by"]?.ToString()
+
             };
         }
 
@@ -78,11 +73,11 @@ namespace StudentManagementSystem.DAL
                                 grade_group = @gradeGroup,
                                 updated_at = @updatedAt,
                                 updated_by = @updatedBy
-                             WHERE id = @id";
+                             WHERE id = @gradeid";
 
             var parameters = new MySqlParameter[]
             {
-                new MySqlParameter("@id", MySqlDbType.Int32) { Value = grade.Id },
+                new MySqlParameter("@gradeid", MySqlDbType.Int32) { Value = grade.GradeId },
                 new MySqlParameter("@gradeName", MySqlDbType.VarChar) { Value = grade.GradeName },
                 new MySqlParameter("@gradeOrder", MySqlDbType.Int32) { Value = grade.GradeOrder },
                 new MySqlParameter("@gradeColor", MySqlDbType.VarChar) { Value = grade.GradeColor },

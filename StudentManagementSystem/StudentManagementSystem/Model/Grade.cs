@@ -8,9 +8,9 @@ namespace StudentManagementSystem.Model
 {
     internal class Grade
     {
-        public int Id { get; set; }
+        public int GradeId { get; set; }
         public string GradeName { get; set; }
-        public int GradeOrder { get; set; }
+        public double GradeOrder { get; set; }
         public string GradeColor { get; set; }
         public string GradeGroup { get; set; }
         public DateTime CreatedAt { get; set; }
