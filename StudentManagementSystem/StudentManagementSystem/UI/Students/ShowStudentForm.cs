@@ -37,12 +37,21 @@ namespace StudentManagementSystem.UI.Students
                 txtEnrollmentDate.Text = student.EnrollmentDate.ToString();
                 txtGender.Text = student.Gender.ToString();
                 txtGrade.Text = student.GradeId.ToString();
-                lblHead.Text = $"{student.FirstName}'s Edit";
+                lblHead.Text = $"{student.FirstName}'s Details";
 
             }
             else
             {
                 MessageBox.Show("Student not found.");
+                this.Close();
+            }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
                 this.Close();
             }
         }

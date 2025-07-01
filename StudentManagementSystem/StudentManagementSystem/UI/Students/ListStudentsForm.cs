@@ -99,7 +99,7 @@ namespace StudentManagementSystem.UI.Students
         {
             if (dgvStudents.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Please select a row to edit.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select a row to View.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

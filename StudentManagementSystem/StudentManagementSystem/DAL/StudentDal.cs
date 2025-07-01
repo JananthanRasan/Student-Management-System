@@ -97,8 +97,7 @@ namespace StudentManagementSystem.DAL
                          email_id = @email, 
                          address = @address,
                          date_of_birth = @dob,
-                         enrollment_date = @enrollmentDate,
-                         updated_at = NOW(),
+                         date_of_enrollment = @enrollmentDate,
                          updated_by = @updatedBy
                          WHERE id = @studentId";
 

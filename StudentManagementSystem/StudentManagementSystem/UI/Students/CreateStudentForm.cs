@@ -47,7 +47,6 @@ namespace StudentManagementSystem.UI.Students
                 GradeId = gradeid,
                 Gender = gender,
                 CreatedAt = DateTime.Now,
-                UpdatedAt = DateTime.Now,
                 CreatedBy = "1"
             };
 
