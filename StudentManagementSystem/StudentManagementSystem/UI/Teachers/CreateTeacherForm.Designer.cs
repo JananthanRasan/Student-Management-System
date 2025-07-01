@@ -41,12 +41,12 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdoFemale = new System.Windows.Forms.RadioButton();
             this.rdoMale = new System.Windows.Forms.RadioButton();
-            this.dtpEnrollmentDate = new System.Windows.Forms.DateTimePicker();
+            this.dtpEmploymentDate = new System.Windows.Forms.DateTimePicker();
             this.dtpDOB = new System.Windows.Forms.DateTimePicker();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.lblEnrollmentDate = new System.Windows.Forms.Label();
             this.txtFirstName = new System.Windows.Forms.TextBox();
-            this.txtAdmissionNo = new System.Windows.Forms.TextBox();
+            this.txtEmploymentId = new System.Windows.Forms.TextBox();
             this.lblDOB = new System.Windows.Forms.Label();
             this.lblGender = new System.Windows.Forms.Label();
             this.lblLastName = new System.Windows.Forms.Label();
@@ -63,9 +63,8 @@
             this.lblHead.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHead.ForeColor = System.Drawing.Color.White;
             this.lblHead.Location = new System.Drawing.Point(0, 0);
-            this.lblHead.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHead.Name = "lblHead";
-            this.lblHead.Size = new System.Drawing.Size(576, 55);
+            this.lblHead.Size = new System.Drawing.Size(432, 45);
             this.lblHead.TabIndex = 15;
             this.lblHead.Text = "Create Teacher";
             this.lblHead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -76,14 +75,14 @@
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.Image = global::StudentManagementSystem.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(440, 640);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClose.Location = new System.Drawing.Point(330, 520);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(123, 46);
+            this.btnClose.Size = new System.Drawing.Size(92, 37);
             this.btnClose.TabIndex = 128;
             this.btnClose.Text = "Close";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSave
             // 
@@ -91,14 +90,14 @@
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Image = global::StudentManagementSystem.Properties.Resources.diskette;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(168, 640);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Location = new System.Drawing.Point(126, 520);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(128, 46);
+            this.btnSave.Size = new System.Drawing.Size(96, 37);
             this.btnSave.TabIndex = 126;
             this.btnSave.Text = "Save";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnReset
             // 
@@ -106,14 +105,14 @@
             this.btnReset.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.Image = global::StudentManagementSystem.Properties.Resources.broom;
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Location = new System.Drawing.Point(304, 640);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReset.Location = new System.Drawing.Point(228, 520);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(128, 46);
+            this.btnReset.Size = new System.Drawing.Size(96, 37);
             this.btnReset.TabIndex = 127;
             this.btnReset.Text = "Reset";
             this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // lblAddress
             // 
@@ -121,10 +120,9 @@
             this.lblAddress.BackColor = System.Drawing.Color.Transparent;
             this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.lblAddress.Location = new System.Drawing.Point(21, 438);
-            this.lblAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAddress.Location = new System.Drawing.Point(16, 356);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(98, 32);
+            this.lblAddress.Size = new System.Drawing.Size(79, 25);
             this.lblAddress.TabIndex = 125;
             this.lblAddress.Text = "Address";
             // 
@@ -133,10 +131,9 @@
             this.txtAddress.BackColor = System.Drawing.Color.White;
             this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.ForeColor = System.Drawing.Color.Black;
-            this.txtAddress.Location = new System.Drawing.Point(238, 435);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAddress.Location = new System.Drawing.Point(178, 353);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(325, 39);
+            this.txtAddress.Size = new System.Drawing.Size(245, 33);
             this.txtAddress.TabIndex = 124;
             // 
             // txtEmail
@@ -144,10 +141,9 @@
             this.txtEmail.BackColor = System.Drawing.Color.White;
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.Black;
-            this.txtEmail.Location = new System.Drawing.Point(238, 384);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Location = new System.Drawing.Point(178, 312);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(325, 39);
+            this.txtEmail.Size = new System.Drawing.Size(245, 33);
             this.txtEmail.TabIndex = 123;
             // 
             // lblEmail
@@ -156,10 +152,9 @@
             this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.lblEmail.Location = new System.Drawing.Point(21, 387);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmail.Location = new System.Drawing.Point(16, 314);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(71, 32);
+            this.lblEmail.Size = new System.Drawing.Size(58, 25);
             this.lblEmail.TabIndex = 122;
             this.lblEmail.Text = "Email";
             // 
@@ -168,10 +163,9 @@
             this.txtPhoneNo.BackColor = System.Drawing.Color.White;
             this.txtPhoneNo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhoneNo.ForeColor = System.Drawing.Color.Black;
-            this.txtPhoneNo.Location = new System.Drawing.Point(238, 333);
-            this.txtPhoneNo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPhoneNo.Location = new System.Drawing.Point(178, 271);
             this.txtPhoneNo.Name = "txtPhoneNo";
-            this.txtPhoneNo.Size = new System.Drawing.Size(325, 39);
+            this.txtPhoneNo.Size = new System.Drawing.Size(245, 33);
             this.txtPhoneNo.TabIndex = 121;
             // 
             // lblPhoneNo
@@ -180,21 +174,18 @@
             this.lblPhoneNo.BackColor = System.Drawing.Color.Transparent;
             this.lblPhoneNo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPhoneNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.lblPhoneNo.Location = new System.Drawing.Point(21, 336);
-            this.lblPhoneNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPhoneNo.Location = new System.Drawing.Point(16, 273);
             this.lblPhoneNo.Name = "lblPhoneNo";
-            this.lblPhoneNo.Size = new System.Drawing.Size(121, 32);
+            this.lblPhoneNo.Size = new System.Drawing.Size(96, 25);
             this.lblPhoneNo.TabIndex = 120;
             this.lblPhoneNo.Text = "Phone No";
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox1.Location = new System.Drawing.Point(5, 617);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(4, 501);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(576, 1);
+            this.groupBox1.Size = new System.Drawing.Size(432, 1);
             this.groupBox1.TabIndex = 119;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -205,10 +196,9 @@
             this.rdoFemale.BackColor = System.Drawing.Color.Transparent;
             this.rdoFemale.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoFemale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.rdoFemale.Location = new System.Drawing.Point(398, 232);
-            this.rdoFemale.Margin = new System.Windows.Forms.Padding(4);
+            this.rdoFemale.Location = new System.Drawing.Point(298, 188);
             this.rdoFemale.Name = "rdoFemale";
-            this.rdoFemale.Size = new System.Drawing.Size(112, 36);
+            this.rdoFemale.Size = new System.Drawing.Size(90, 29);
             this.rdoFemale.TabIndex = 117;
             this.rdoFemale.TabStop = true;
             this.rdoFemale.Text = "Female";
@@ -220,38 +210,35 @@
             this.rdoMale.BackColor = System.Drawing.Color.Transparent;
             this.rdoMale.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoMale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.rdoMale.Location = new System.Drawing.Point(238, 232);
-            this.rdoMale.Margin = new System.Windows.Forms.Padding(4);
+            this.rdoMale.Location = new System.Drawing.Point(178, 188);
             this.rdoMale.Name = "rdoMale";
-            this.rdoMale.Size = new System.Drawing.Size(88, 36);
+            this.rdoMale.Size = new System.Drawing.Size(72, 29);
             this.rdoMale.TabIndex = 118;
             this.rdoMale.TabStop = true;
             this.rdoMale.Text = "Male";
             this.rdoMale.UseVisualStyleBackColor = false;
             // 
-            // dtpEnrollmentDate
+            // dtpEmploymentDate
             // 
-            this.dtpEnrollmentDate.CustomFormat = "dd/MM/yyyy";
-            this.dtpEnrollmentDate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpEnrollmentDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpEnrollmentDate.Location = new System.Drawing.Point(238, 535);
-            this.dtpEnrollmentDate.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpEnrollmentDate.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dtpEnrollmentDate.Name = "dtpEnrollmentDate";
-            this.dtpEnrollmentDate.Size = new System.Drawing.Size(325, 39);
-            this.dtpEnrollmentDate.TabIndex = 116;
-            this.dtpEnrollmentDate.Value = new System.DateTime(2025, 6, 23, 0, 0, 0, 0);
+            this.dtpEmploymentDate.CustomFormat = "dd/MM/yyyy";
+            this.dtpEmploymentDate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpEmploymentDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpEmploymentDate.Location = new System.Drawing.Point(178, 435);
+            this.dtpEmploymentDate.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dtpEmploymentDate.Name = "dtpEmploymentDate";
+            this.dtpEmploymentDate.Size = new System.Drawing.Size(245, 33);
+            this.dtpEmploymentDate.TabIndex = 116;
+            this.dtpEmploymentDate.Value = new System.DateTime(2025, 6, 23, 0, 0, 0, 0);
             // 
             // dtpDOB
             // 
             this.dtpDOB.CustomFormat = "dd/MM/yyyy";
             this.dtpDOB.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDOB.Location = new System.Drawing.Point(238, 484);
-            this.dtpDOB.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpDOB.Location = new System.Drawing.Point(178, 393);
             this.dtpDOB.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpDOB.Name = "dtpDOB";
-            this.dtpDOB.Size = new System.Drawing.Size(325, 39);
+            this.dtpDOB.Size = new System.Drawing.Size(245, 33);
             this.dtpDOB.TabIndex = 115;
             this.dtpDOB.Value = new System.DateTime(2025, 6, 23, 0, 0, 0, 0);
             // 
@@ -260,10 +247,9 @@
             this.txtLastName.BackColor = System.Drawing.Color.White;
             this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastName.ForeColor = System.Drawing.Color.Black;
-            this.txtLastName.Location = new System.Drawing.Point(238, 180);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLastName.Location = new System.Drawing.Point(178, 146);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(325, 39);
+            this.txtLastName.Size = new System.Drawing.Size(245, 33);
             this.txtLastName.TabIndex = 113;
             // 
             // lblEnrollmentDate
@@ -272,10 +258,9 @@
             this.lblEnrollmentDate.BackColor = System.Drawing.Color.Transparent;
             this.lblEnrollmentDate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEnrollmentDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.lblEnrollmentDate.Location = new System.Drawing.Point(24, 540);
-            this.lblEnrollmentDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEnrollmentDate.Location = new System.Drawing.Point(18, 439);
             this.lblEnrollmentDate.Name = "lblEnrollmentDate";
-            this.lblEnrollmentDate.Size = new System.Drawing.Size(187, 32);
+            this.lblEnrollmentDate.Size = new System.Drawing.Size(148, 25);
             this.lblEnrollmentDate.TabIndex = 109;
             this.lblEnrollmentDate.Text = "Enrollment Date";
             // 
@@ -284,22 +269,20 @@
             this.txtFirstName.BackColor = System.Drawing.Color.White;
             this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstName.ForeColor = System.Drawing.Color.Black;
-            this.txtFirstName.Location = new System.Drawing.Point(238, 132);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFirstName.Location = new System.Drawing.Point(178, 107);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(325, 39);
+            this.txtFirstName.Size = new System.Drawing.Size(245, 33);
             this.txtFirstName.TabIndex = 112;
             // 
-            // txtAdmissionNo
+            // txtEmploymentId
             // 
-            this.txtAdmissionNo.BackColor = System.Drawing.Color.White;
-            this.txtAdmissionNo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAdmissionNo.ForeColor = System.Drawing.Color.Black;
-            this.txtAdmissionNo.Location = new System.Drawing.Point(238, 78);
-            this.txtAdmissionNo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAdmissionNo.Name = "txtAdmissionNo";
-            this.txtAdmissionNo.Size = new System.Drawing.Size(325, 39);
-            this.txtAdmissionNo.TabIndex = 111;
+            this.txtEmploymentId.BackColor = System.Drawing.Color.White;
+            this.txtEmploymentId.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmploymentId.ForeColor = System.Drawing.Color.Black;
+            this.txtEmploymentId.Location = new System.Drawing.Point(178, 63);
+            this.txtEmploymentId.Name = "txtEmploymentId";
+            this.txtEmploymentId.Size = new System.Drawing.Size(245, 33);
+            this.txtEmploymentId.TabIndex = 111;
             // 
             // lblDOB
             // 
@@ -307,10 +290,9 @@
             this.lblDOB.BackColor = System.Drawing.Color.Transparent;
             this.lblDOB.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDOB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.lblDOB.Location = new System.Drawing.Point(24, 489);
-            this.lblDOB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDOB.Location = new System.Drawing.Point(18, 397);
             this.lblDOB.Name = "lblDOB";
-            this.lblDOB.Size = new System.Drawing.Size(73, 32);
+            this.lblDOB.Size = new System.Drawing.Size(58, 25);
             this.lblDOB.TabIndex = 108;
             this.lblDOB.Text = "D.O.B";
             // 
@@ -320,10 +302,9 @@
             this.lblGender.BackColor = System.Drawing.Color.Transparent;
             this.lblGender.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.lblGender.Location = new System.Drawing.Point(21, 234);
-            this.lblGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGender.Location = new System.Drawing.Point(16, 190);
             this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(92, 32);
+            this.lblGender.Size = new System.Drawing.Size(74, 25);
             this.lblGender.TabIndex = 106;
             this.lblGender.Text = "Gender";
             // 
@@ -333,10 +314,9 @@
             this.lblLastName.BackColor = System.Drawing.Color.Transparent;
             this.lblLastName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.lblLastName.Location = new System.Drawing.Point(21, 183);
-            this.lblLastName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLastName.Location = new System.Drawing.Point(16, 149);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(126, 32);
+            this.lblLastName.Size = new System.Drawing.Size(100, 25);
             this.lblLastName.TabIndex = 105;
             this.lblLastName.Text = "Last Name";
             // 
@@ -346,10 +326,9 @@
             this.lblFirstName.BackColor = System.Drawing.Color.Transparent;
             this.lblFirstName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.lblFirstName.Location = new System.Drawing.Point(21, 132);
-            this.lblFirstName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFirstName.Location = new System.Drawing.Point(16, 107);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(129, 32);
+            this.lblFirstName.Size = new System.Drawing.Size(102, 25);
             this.lblFirstName.TabIndex = 110;
             this.lblFirstName.Text = "First Name";
             // 
@@ -359,10 +338,9 @@
             this.lblEmploymentId.BackColor = System.Drawing.Color.Transparent;
             this.lblEmploymentId.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmploymentId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.lblEmploymentId.Location = new System.Drawing.Point(21, 81);
-            this.lblEmploymentId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmploymentId.Location = new System.Drawing.Point(16, 66);
             this.lblEmploymentId.Name = "lblEmploymentId";
-            this.lblEmploymentId.Size = new System.Drawing.Size(179, 32);
+            this.lblEmploymentId.Size = new System.Drawing.Size(140, 25);
             this.lblEmploymentId.TabIndex = 104;
             this.lblEmploymentId.Text = "Employment ID";
             // 
@@ -372,10 +350,9 @@
             this.lblNIC.BackColor = System.Drawing.Color.Transparent;
             this.lblNIC.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNIC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.lblNIC.Location = new System.Drawing.Point(24, 285);
-            this.lblNIC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNIC.Location = new System.Drawing.Point(18, 232);
             this.lblNIC.Name = "lblNIC";
-            this.lblNIC.Size = new System.Drawing.Size(53, 32);
+            this.lblNIC.Size = new System.Drawing.Size(43, 25);
             this.lblNIC.TabIndex = 105;
             this.lblNIC.Text = "NIC";
             // 
@@ -384,18 +361,17 @@
             this.txtNIC.BackColor = System.Drawing.Color.White;
             this.txtNIC.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNIC.ForeColor = System.Drawing.Color.Black;
-            this.txtNIC.Location = new System.Drawing.Point(238, 282);
-            this.txtNIC.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNIC.Location = new System.Drawing.Point(178, 229);
             this.txtNIC.Name = "txtNIC";
-            this.txtNIC.Size = new System.Drawing.Size(325, 39);
+            this.txtNIC.Size = new System.Drawing.Size(245, 33);
             this.txtNIC.TabIndex = 113;
             // 
             // CreateTeacherForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.ClientSize = new System.Drawing.Size(576, 704);
+            this.ClientSize = new System.Drawing.Size(432, 572);
             this.ControlBox = false;
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
@@ -409,13 +385,13 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.rdoFemale);
             this.Controls.Add(this.rdoMale);
-            this.Controls.Add(this.dtpEnrollmentDate);
+            this.Controls.Add(this.dtpEmploymentDate);
             this.Controls.Add(this.dtpDOB);
             this.Controls.Add(this.txtNIC);
             this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.lblEnrollmentDate);
             this.Controls.Add(this.txtFirstName);
-            this.Controls.Add(this.txtAdmissionNo);
+            this.Controls.Add(this.txtEmploymentId);
             this.Controls.Add(this.lblDOB);
             this.Controls.Add(this.lblNIC);
             this.Controls.Add(this.lblGender);
@@ -423,7 +399,6 @@
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.lblEmploymentId);
             this.Controls.Add(this.lblHead);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CreateTeacherForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create Teacher";
@@ -446,12 +421,12 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rdoFemale;
         private System.Windows.Forms.RadioButton rdoMale;
-        private System.Windows.Forms.DateTimePicker dtpEnrollmentDate;
+        private System.Windows.Forms.DateTimePicker dtpEmploymentDate;
         private System.Windows.Forms.DateTimePicker dtpDOB;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.Label lblEnrollmentDate;
         private System.Windows.Forms.TextBox txtFirstName;
-        private System.Windows.Forms.TextBox txtAdmissionNo;
+        private System.Windows.Forms.TextBox txtEmploymentId;
         private System.Windows.Forms.Label lblDOB;
         private System.Windows.Forms.Label lblGender;
         private System.Windows.Forms.Label lblLastName;

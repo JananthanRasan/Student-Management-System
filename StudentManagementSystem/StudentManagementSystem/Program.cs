@@ -1,5 +1,6 @@
 ﻿using StudentManagementSystem.UI;
 using StudentManagementSystem.UI.Students;
+using StudentManagementSystem.UI.Teachers;
 using StudentManagementSystem.UI.Users;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace StudentManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ListStudentsForm());
+            Application.Run(new ListTeachersForm());
         }
     }
 }
