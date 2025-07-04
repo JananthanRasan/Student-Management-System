@@ -1,5 +1,6 @@
 ﻿using StudentManagementSystem.DAL;
 using StudentManagementSystem.Model;
+using StudentManagementSystem.UI.GradeSubject;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -111,17 +112,19 @@ namespace StudentManagementSystem.UI.Grades
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            string gradeName = txtGradeName.Text.Trim();
-            double gradeOrder = Convert.ToDouble(txtGradeOrder.Text.Trim());
-            string gradeColor = txtGradeColor.Text.Trim();
-            string gradeGroup = txtGradeGroup.Text.Trim();
+            string gradeName = txtGradeName.Text;
+            double gradeOrder = Convert.ToDouble(txtGradeOrder.Text);
+            string gradeColor = txtGradeColor.Text;
+            string gradeGroup = txtGradeGroup.Text;
 
             var grade = new Grade
             {
+                GradeId = Convert.ToInt32(dgvGrades.SelectedRows[0].Cells["id"].Value),
                 GradeName = gradeName,
                 GradeOrder = gradeOrder,
                 GradeColor = gradeColor,
                 GradeGroup = gradeGroup,
+                UpdatedAt = DateTime.Now,
                 UpdatedBy = "1"
             };
 
@@ -135,8 +138,7 @@ namespace StudentManagementSystem.UI.Grades
             {
                 MessageBox.Show("Error updating student: " + ex.Message);
             }
-            finally
-            {
+            finally { 
                 clear();
                 btnAddGrade.Visible = true;
                 btnUpdate.Visible = false;
@@ -165,6 +167,20 @@ namespace StudentManagementSystem.UI.Grades
                 MessageBox.Show("Grade deleted successfully.");
 
             }
+        }
+
+        private void btnAddSubject_Click(object sender, EventArgs e)
+        {
+            if (dgvGrades.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a row to Add Subject.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int gradeId = Convert.ToInt32(dgvGrades.SelectedRows[0].Cells["id"].Value);
+
+            GradeSubjectForm gradeSubjectForm = new GradeSubjectForm(gradeId);
+            gradeSubjectForm.ShowDialog();
         }
     }
 }

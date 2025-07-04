@@ -226,6 +226,7 @@
             this.btnAddSubject.Text = "Add Subject";
             this.btnAddSubject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAddSubject.UseVisualStyleBackColor = false;
+            this.btnAddSubject.Click += new System.EventHandler(this.btnAddSubject_Click);
             // 
             // btnUpdate
             // 

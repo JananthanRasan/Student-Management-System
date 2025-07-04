@@ -1,5 +1,6 @@
 ﻿using StudentManagementSystem.UI;
 using StudentManagementSystem.UI.Grades;
+using StudentManagementSystem.UI.GradeSubject;
 using StudentManagementSystem.UI.Students;
 using StudentManagementSystem.UI.Subjects;
 using StudentManagementSystem.UI.Teachers;

@@ -122,14 +122,16 @@ namespace StudentManagementSystem.UI.Subjects
             string subjectName = txtSubjectName.Text.Trim();
             string subjectIndex = txtSubjectIndex.Text.Trim();
             double subjectOrder = Convert.ToDouble(txtSubjectOrder.Text);
-            string subjectColor = txtSubjectOrder.Text.Trim();
+            string subjectColor = txtSubjectColor.Text.Trim();
 
             var subject = new Subject
             {
+                SubjectId = Convert.ToInt32(dgvSubjects.SelectedRows[0].Cells["id"].Value),
                 SubjectName = subjectName,
                 SubjectIndex = subjectIndex,
                 SubjectOrder = subjectOrder,
                 SubjectColor = subjectColor,
+                UpdatedAt = DateTime.Now,
                 UpdatedBy = "1"
             };
 
