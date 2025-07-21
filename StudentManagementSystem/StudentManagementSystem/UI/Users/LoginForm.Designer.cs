@@ -46,9 +46,11 @@
             this.txtFirstName.BackColor = System.Drawing.Color.White;
             this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstName.ForeColor = System.Drawing.Color.Black;
-            this.txtFirstName.Location = new System.Drawing.Point(153, 287);
+            this.txtFirstName.Location = new System.Drawing.Point(204, 353);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(199, 35);
+            this.txtFirstName.PasswordChar = '*';
+            this.txtFirstName.Size = new System.Drawing.Size(264, 42);
             this.txtFirstName.TabIndex = 96;
             // 
             // txtTeacherID
@@ -56,9 +58,10 @@
             this.txtTeacherID.BackColor = System.Drawing.Color.White;
             this.txtTeacherID.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTeacherID.ForeColor = System.Drawing.Color.Black;
-            this.txtTeacherID.Location = new System.Drawing.Point(153, 222);
+            this.txtTeacherID.Location = new System.Drawing.Point(204, 273);
+            this.txtTeacherID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTeacherID.Name = "txtTeacherID";
-            this.txtTeacherID.Size = new System.Drawing.Size(199, 35);
+            this.txtTeacherID.Size = new System.Drawing.Size(264, 42);
             this.txtTeacherID.TabIndex = 95;
             // 
             // lblSubjectCode
@@ -67,9 +70,10 @@
             this.lblSubjectCode.BackColor = System.Drawing.Color.Transparent;
             this.lblSubjectCode.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubjectCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.lblSubjectCode.Location = new System.Drawing.Point(12, 292);
+            this.lblSubjectCode.Location = new System.Drawing.Point(16, 359);
+            this.lblSubjectCode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSubjectCode.Name = "lblSubjectCode";
-            this.lblSubjectCode.Size = new System.Drawing.Size(99, 30);
+            this.lblSubjectCode.Size = new System.Drawing.Size(128, 37);
             this.lblSubjectCode.TabIndex = 93;
             this.lblSubjectCode.Text = "Password";
             // 
@@ -79,9 +83,10 @@
             this.lblSubjectName.BackColor = System.Drawing.Color.Transparent;
             this.lblSubjectName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.lblSubjectName.Location = new System.Drawing.Point(12, 227);
+            this.lblSubjectName.Location = new System.Drawing.Point(16, 279);
+            this.lblSubjectName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSubjectName.Name = "lblSubjectName";
-            this.lblSubjectName.Size = new System.Drawing.Size(116, 30);
+            this.lblSubjectName.Size = new System.Drawing.Size(148, 37);
             this.lblSubjectName.TabIndex = 94;
             this.lblSubjectName.Text = "User Name";
             // 
@@ -92,8 +97,9 @@
             this.lblHead.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHead.ForeColor = System.Drawing.Color.White;
             this.lblHead.Location = new System.Drawing.Point(0, 0);
+            this.lblHead.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHead.Name = "lblHead";
-            this.lblHead.Size = new System.Drawing.Size(364, 45);
+            this.lblHead.Size = new System.Drawing.Size(485, 55);
             this.lblHead.TabIndex = 92;
             this.lblHead.Text = "Login";
             this.lblHead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -101,9 +107,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox1.Location = new System.Drawing.Point(-6, 373);
+            this.groupBox1.Location = new System.Drawing.Point(-8, 459);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(409, 1);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(545, 1);
             this.groupBox1.TabIndex = 99;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -112,9 +120,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(115, 68);
+            this.pictureBox1.Location = new System.Drawing.Point(153, 84);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 129);
+            this.pictureBox1.Size = new System.Drawing.Size(171, 159);
             this.pictureBox1.TabIndex = 100;
             this.pictureBox1.TabStop = false;
             // 
@@ -124,9 +133,10 @@
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Image = global::StudentManagementSystem.Properties.Resources.cancel;
             this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancel.Location = new System.Drawing.Point(135, 392);
+            this.btnCancel.Location = new System.Drawing.Point(180, 482);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(108, 38);
+            this.btnCancel.Size = new System.Drawing.Size(144, 47);
             this.btnCancel.TabIndex = 97;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -138,9 +148,10 @@
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Image = global::StudentManagementSystem.Properties.Resources.enter;
             this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogin.Location = new System.Drawing.Point(249, 392);
+            this.btnLogin.Location = new System.Drawing.Point(332, 482);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(103, 38);
+            this.btnLogin.Size = new System.Drawing.Size(137, 47);
             this.btnLogin.TabIndex = 98;
             this.btnLogin.Text = "Login";
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -148,10 +159,10 @@
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
-            this.ClientSize = new System.Drawing.Size(364, 443);
+            this.ClientSize = new System.Drawing.Size(485, 545);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
@@ -162,6 +173,7 @@
             this.Controls.Add(this.lblSubjectCode);
             this.Controls.Add(this.lblSubjectName);
             this.Controls.Add(this.lblHead);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registration";

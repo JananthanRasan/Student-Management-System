@@ -1,4 +1,5 @@
-﻿using StudentManagementSystem.DAL;
+﻿using MySqlX.XDevAPI.Relational;
+using StudentManagementSystem.DAL;
 using StudentManagementSystem.Model;
 using System;
 using System.Collections.Generic;
@@ -41,7 +42,6 @@ namespace StudentManagementSystem.UI.GradeSubject
         private void btnAdd_Click(object sender, EventArgs e)
         {
             
-            MessageBox.Show(lvwStudents.Text);
         }
 
         private void GradeSubjectForm_Load(object sender, EventArgs e)
@@ -64,11 +64,10 @@ namespace StudentManagementSystem.UI.GradeSubject
 
             DataTable dt = subjectDal.GetAllSubjects();
 
-
             foreach (DataColumn column in dt.Columns)
             {
                 
-                lvwStudents.Columns.Add(column.ColumnName, 100, HorizontalAlignment.Left);
+                lvwStudents.Columns.Add(column.ColumnName, 100, HorizontalAlignment.Center);
             }
 
             foreach (DataRow row in dt.Rows)
