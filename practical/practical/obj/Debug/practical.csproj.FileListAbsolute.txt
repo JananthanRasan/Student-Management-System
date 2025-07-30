@@ -1,0 +1,8 @@
+E:\GitHub\Student-Management-System\practical\practical\bin\Debug\practical.exe.config
+E:\GitHub\Student-Management-System\practical\practical\bin\Debug\practical.exe
+E:\GitHub\Student-Management-System\practical\practical\bin\Debug\practical.pdb
+E:\GitHub\Student-Management-System\practical\practical\obj\Debug\practical.csproj.AssemblyReference.cache
+E:\GitHub\Student-Management-System\practical\practical\obj\Debug\practical.csproj.CoreCompileInputs.cache
+E:\GitHub\Student-Management-System\practical\practical\obj\Debug\practical.exe
+E:\GitHub\Student-Management-System\practical\practical\obj\Debug\practical.pdb
+E:\GitHub\Student-Management-System\practical\practical\obj\Debug\practical.exe.config
